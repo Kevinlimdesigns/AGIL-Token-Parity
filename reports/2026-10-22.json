@@ -1,0 +1,322 @@
+{
+ "report": "web vs mobile token parity",
+ "date": "2026-10-22",
+ "reference": "mobile (per Kevin)",
+ "mode": "read-only",
+ "severity_rubric": "PROPOSED (the token-parity-audit skill is not in the repo yet). P1 = a colour that carries meaning (status/severity) differs. P2 = the same role uses a different token or value, or a token is stale/hardcoded where the other side binds. P3 = naming, scale or hygiene with little visible difference.",
+ "scope": "mapped token values vs relationship; bound vs hardcoded fills; text styles; semantic state colours. No layout or screenshot comparison.",
+ "summary": {
+  "mobile": {
+   "pct_solid_bound": 77.7,
+   "pct_text_styled": 86.5,
+   "semantic_colours_used": 49
+  },
+  "web": {
+   "pct_solid_bound": 98.5,
+   "pct_text_styled": 97.4,
+   "semantic_colours_used": 52
+  },
+  "semantic_colours_shared": 43
+ },
+ "counts": {
+  "P1": 1,
+  "P2": 8,
+  "P3": 5
+ },
+ "routes": {
+  "FIX-WEB": 4,
+  "FIX-MOBILE": 2,
+  "CHERN-DECISION": 8
+ },
+ "findings": [
+  {
+   "id": "PAR-001",
+   "severity": "P1",
+   "route": "CHERN-DECISION",
+   "title": "Severity and status colours use different tokens and values",
+   "evidence": "Mobile uses local priority level/* tokens (critical #ef4444 Red/500, high #fb923c Orange/400, medium #facc15 Yellow/400, low #38bdf8 Sky/400, minimal #a1a1aa) and never binds color-icon-warning or color-icon-success. Web uses AOH status tokens: color-icon-error/-warning/-info/-success, color-bg-warning-strong (~6,800 uses, mostly map pins and clusters), and color-border-warning/-warning-muted. No value matches: AOH error is Red/600, warning is Yellow/500, info is Blue/600.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-002",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Web uses a hardcoded orange with no AOH token",
+   "evidence": "#f97316 (Orange/500) appears as 30% fill + stroke vectors and ellipses in all 8 web modules. Mobile's nearest colour is priority level/high #fb923c (Orange/400). Confirm what the orange means, then give it one token on both sides.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Geofence",
+    "node": "19615:11620",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620"
+   }
+  },
+  {
+   "id": "PAR-003",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Active, selected and link states use different token families",
+   "evidence": "Mobile marks these states with color-*-interactive tokens: icon-interactive 1,168 on Chat, border-interactive 386 on Comms, text-interactive on all pages. Web barely uses -interactive (icon 62 on Chat, border 19 on Responder) and uses color-*-primary and color-bg-info-strong instead. This is inferred from usage counts; check one component pair (e.g. Panel/ Tab vs Tab bar) before fixing.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-004",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Focus ring uses different tokens",
+   "evidence": "Mobile uses color-border-focusRing-sidebar (Zinc/400, a sidebar token) on Recent, Chat and Map, and color-border-interactive-focus (Sky/500). Web uses AOH color-border-focusRing (Blue/500). Recommendation: mobile adopts color-border-focusRing.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-005",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Card corner radius differs (8px vs 12px)",
+   "evidence": "Web binds Radius/radius-card (12px) on Chat (483) and Login. Mobile never uses radius-card; its cards use radius-dialog (8px) or hardcoded radius 8 / 20.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Comms",
+    "node": "735:39373",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-006",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile binds to stale collections .Semantic and Dimensions",
+   "evidence": "These collections are not in AOH and not published by any library linked to the file, so their values are frozen. Used on all 7 scanned mobile pages, e.g. Spacing/input-size-container-md, Spacing/px, Spacing/0.5. Spacing/spacing-2xs and spacing-lg duplicate AOH names. Rebind to AOH Spacing.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-007",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web binds to the same stale collections",
+   "evidence": "The same .Semantic and Dimensions variables are used in all 8 web modules, plus web-only Spacing/1.5, 3.5, Border Radius/rounded, rounded-lg, rounded-none, Radius/rounded-sm and a misspelled Spacing/input-size-containr-sm. Rebind to AOH Spacing.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-008",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Avatar is a different component with different tokens",
+   "evidence": "Web uses the AOH Avatar component, Size/size-avatar-xs/sm/md and AOH Avatars/* images. Mobile uses a local Avatar component with the local token comms/avatar-surface (#2a3f5c) and no avatar size tokens.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Directory",
+    "node": "850:11256",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256"
+   },
+   "web": {
+    "frame": "Responder",
+    "node": "19595:5721",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721"
+   }
+  },
+  {
+   "id": "PAR-009",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web Login has hardcoded text and border colours",
+   "evidence": "#09090b and #71717a text plus #e4e4e7 strokes match color-text, color-text-muted and color-border (Light) but are not bound. Also #ffffff at 40% and a non-AOH paint style 'Gradient - Dark'. Web Login: 90.2% bound. Mobile Login: 98.5%.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  },
+  {
+   "id": "PAR-010",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Icons on dark surfaces use different tokens",
+   "evidence": "Web uses color-icon-invers (~2,200 uses, map pins and chips). Mobile never uses it; it uses color-icon-onColor. Values differ: invers is Gray/200 (Light), onColor is Zinc/50.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Map",
+    "node": "19630:18977",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977"
+   }
+  },
+  {
+   "id": "PAR-011",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Input borders use a different token name (same value)",
+   "evidence": "Web binds color-border-input. Mobile binds color-border. Both resolve to Zinc/200 / Zinc/800 today, so nothing looks different yet, but they will drift if either is changed.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  },
+  {
+   "id": "PAR-012",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Both platforms use gap 10, which is off the AOH spacing scale",
+   "evidence": "gap 10 is unbound on both: mobile Chat 469, Comms 305; web Chat 627, Responder 366. The AOH scale has 8 and 12, not 10. Web also leaves padLeft 12 unbound in every module (spacing-md exists). Either add 10 to AOH or move both platforms to 8/12.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-013",
+   "severity": "P3",
+   "route": "FIX-WEB",
+   "title": "Web Chat uses 10px text, below the AOH minimum",
+   "evidence": "Geist Regular 10, unstyled, appears 240 times in web Chat. The smallest AOH text style is text-xs (12px).",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-014",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Title text styles differ",
+   "evidence": "Mobile titles use ShadCN typography/h1-h2 and text-xl/font-bold (Login). Web panels use text-lg/font-bold, and web Login uses ShadCN typography/h3.",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  }
+ ],
+ "expected_platform_differences": [
+  "Mobile uses size-button-lg/xl and size-input-lg (touch targets). Web uses size-button-sm, size-input-sm and size-formControll-sm. Not drift.",
+  "spacing-xs and spacing-3xl are used only on web."
+ ],
+ "excluded": [
+  "Android-nav-bar, keyboard and keyboard kit (OS-drawn UI)",
+  "annotations and flow arrows",
+  "web module title labels (#eeeeee, Inter 64)"
+ ]
+}

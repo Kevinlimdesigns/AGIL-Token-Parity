@@ -1,0 +1,311 @@
+{
+ "audit": "web token inventory",
+ "date": "2026-10-22",
+ "file": "VYNooSMqyhqJPom58kg8zV",
+ "library": "AOH UI/ShadCN component library (only linked library)",
+ "mode": "read-only",
+ "method": "Same scan as the mobile inventory, run on each module frame instead of a page.",
+ "note": "Every module frame contains the full dashboard (map, list, header), so shared components such as Map/ IncidentPin and Map/ Cluster are counted in every module.",
+ "modules": {
+  "incident": {
+   "name": "Incident Panel",
+   "node": "19553:372547",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547",
+   "nodes": 14020,
+   "authored": 3861,
+   "text": 3194,
+   "text_styled": 3160,
+   "solid_bound": 8906,
+   "solid_hard": 122,
+   "solid_style": 0,
+   "pct_solid_bound": 98.6,
+   "pct_text_styled": 98.9
+  },
+  "responder": {
+   "name": "Responder Panel",
+   "node": "19595:5721",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721",
+   "nodes": 20303,
+   "authored": 3309,
+   "text": 3846,
+   "text_styled": 3737,
+   "solid_bound": 13198,
+   "solid_hard": 180,
+   "solid_style": 0,
+   "pct_solid_bound": 98.7,
+   "pct_text_styled": 97.2
+  },
+  "chat": {
+   "name": "Chat Panel",
+   "node": "19605:7561",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561",
+   "nodes": 30367,
+   "authored": 6848,
+   "text": 6878,
+   "text_styled": 6567,
+   "solid_bound": 20059,
+   "solid_hard": 269,
+   "solid_style": 0,
+   "pct_solid_bound": 98.7,
+   "pct_text_styled": 95.5
+  },
+  "geofence": {
+   "name": "Geofence Panel",
+   "node": "19615:11620",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620",
+   "nodes": 8039,
+   "authored": 2196,
+   "text": 1989,
+   "text_styled": 1962,
+   "solid_bound": 5513,
+   "solid_hard": 126,
+   "solid_style": 0,
+   "pct_solid_bound": 97.8,
+   "pct_text_styled": 98.6
+  },
+  "camera": {
+   "name": "Camera Panel",
+   "node": "19622:14597",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597",
+   "nodes": 3151,
+   "authored": 975,
+   "text": 690,
+   "text_styled": 675,
+   "solid_bound": 2093,
+   "solid_hard": 41,
+   "solid_style": 0,
+   "pct_solid_bound": 98.1,
+   "pct_text_styled": 97.8
+  },
+  "active": {
+   "name": "Active Alerts",
+   "node": "19625:15120",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19625-15120",
+   "nodes": 9344,
+   "authored": 2269,
+   "text": 2381,
+   "text_styled": 2358,
+   "solid_bound": 6394,
+   "solid_hard": 70,
+   "solid_style": 0,
+   "pct_solid_bound": 98.9,
+   "pct_text_styled": 99.0
+  },
+  "map": {
+   "name": "Map Panel",
+   "node": "19630:18977",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977",
+   "nodes": 9001,
+   "authored": 2262,
+   "text": 2227,
+   "text_styled": 2202,
+   "solid_bound": 5968,
+   "solid_hard": 83,
+   "solid_style": 0,
+   "pct_solid_bound": 98.6,
+   "pct_text_styled": 98.9
+  },
+  "login": {
+   "name": "Login",
+   "node": "19632:21327",
+   "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327",
+   "nodes": 751,
+   "authored": 190,
+   "text": 185,
+   "text_styled": 173,
+   "solid_bound": 424,
+   "solid_hard": 46,
+   "solid_style": 0,
+   "pct_solid_bound": 90.2,
+   "pct_text_styled": 93.5
+  }
+ },
+ "totals": {
+  "nodes": 94976,
+  "pct_solid_bound": 98.5,
+  "pct_text_styled": 97.4,
+  "solid_hard": 937
+ },
+ "semantic_colours_used": [
+  "color-bg",
+  "color-bg-disabled",
+  "color-bg-elevated",
+  "color-bg-error-muted",
+  "color-bg-error-strong",
+  "color-bg-info-muted",
+  "color-bg-info-strong",
+  "color-bg-invers",
+  "color-bg-primary",
+  "color-bg-secondary",
+  "color-bg-strong",
+  "color-bg-subtle",
+  "color-bg-success-muted",
+  "color-bg-success-strong",
+  "color-bg-warning-muted",
+  "color-bg-warning-strong",
+  "color-border",
+  "color-border-disabled",
+  "color-border-error",
+  "color-border-error-muted",
+  "color-border-focusRing",
+  "color-border-hover",
+  "color-border-input",
+  "color-border-interactive",
+  "color-border-onColor",
+  "color-border-primary",
+  "color-border-success",
+  "color-border-warning",
+  "color-border-warning-muted",
+  "color-icon",
+  "color-icon-disabled",
+  "color-icon-error",
+  "color-icon-info",
+  "color-icon-interactive",
+  "color-icon-invers",
+  "color-icon-muted",
+  "color-icon-onColor",
+  "color-icon-primary",
+  "color-icon-success",
+  "color-icon-warning",
+  "color-text",
+  "color-text-disabled",
+  "color-text-error",
+  "color-text-info",
+  "color-text-interactive",
+  "color-text-inverse",
+  "color-text-muted",
+  "color-text-onColor",
+  "color-text-placeholder",
+  "color-text-primary",
+  "color-text-success",
+  "color-text-warning"
+ ],
+ "spacing_radius_size_used": [
+  "Radius/radius",
+  "Radius/radius-button",
+  "Radius/radius-card",
+  "Radius/radius-dialog",
+  "Radius/radius-focusRing",
+  "Radius/radius-iconButton",
+  "Radius/radius-input",
+  "Radius/radius-lg",
+  "Radius/radius-round",
+  "Radius/radius-sm",
+  "Size/size-avatar-md",
+  "Size/size-avatar-sm",
+  "Size/size-avatar-xs",
+  "Size/size-button-md",
+  "Size/size-button-sm",
+  "Size/size-formControll-lg",
+  "Size/size-formControll-md",
+  "Size/size-formControll-sm",
+  "Size/size-input-md",
+  "Size/size-input-sm",
+  "Spacing/spacing-2xl",
+  "Spacing/spacing-2xs",
+  "Spacing/spacing-3xl",
+  "Spacing/spacing-3xs",
+  "Spacing/spacing-lg",
+  "Spacing/spacing-md",
+  "Spacing/spacing-sm",
+  "Spacing/spacing-xl",
+  "Spacing/spacing-xs"
+ ],
+ "stale_variables_used": {
+  ".Semantic": [
+   "Spacing/spacing-2xs",
+   "Spacing/spacing-xs",
+   "Spacing/spacing-lg",
+   "Spacing/space-sm",
+   "Spacing/input-size-container-md",
+   "Spacing/input-size-containr-sm",
+   "Radius/rounded-full",
+   "Radius/rounded-sm"
+  ],
+  "Dimensions": [
+   "Spacing/px",
+   "Spacing/0.5",
+   "Spacing/1.5",
+   "Spacing/3.5",
+   "Spacing/space-2",
+   "Border Radius/rounded",
+   "Border Radius/rounded-lg",
+   "Border Radius/rounded-none"
+  ]
+ },
+ "text_styles": [
+  "text-xs/font-light",
+  "text-xs/font-regular",
+  "text-xs/font-medium",
+  "text-xs/font-semiBold",
+  "text-xs/font-bold",
+  "text-sm/font-regular",
+  "text-sm/font-medium",
+  "text-sm/font-semiBold",
+  "text-sm/font-bold",
+  "text-base/font-medium",
+  "text-base/font-semiBold",
+  "text-lg/font-semiBold",
+  "text-lg/font-bold",
+  "text-xl/font-bold",
+  "ShadCN typography/h3"
+ ],
+ "effect_styles": [
+  "Shadows/sm",
+  "Shadows/sm-strong",
+  "Shadows/md",
+  "Shadows/lg"
+ ],
+ "paint_styles": [
+  "Avatars/* (AOH avatar images)",
+  "Gradient - Dark (Login, remote, not an AOH style)"
+ ],
+ "local_tokens": "none (no local variable bindings found)",
+ "hardcoded": [
+  {
+   "value": "#eeeeee TEXT",
+   "modules": "all 8 (Chat 74, Responder 40, Incident 33, Geofence 26, Map 24, Active 22, Camera 14, Login 11)",
+   "note": "Placed directly on each module frame. Probably section labels; confirm, then exclude."
+  },
+  {
+   "value": "Inter 64 / Inter Black 500 text",
+   "modules": "all 8",
+   "note": "Same labels. Exclude."
+  },
+  {
+   "value": "#f97316 (Orange/500) VECTOR fill@30% + stroke, ELLIPSE",
+   "modules": "all 8 (Chat 49+47, Responder 28, Incident 26, Geofence 17+48, Map 17, Active 15, Camera 9)",
+   "note": "No semantic token for this orange."
+  },
+  {
+   "value": "#09090b, #71717a TEXT; #e4e4e7 stroke",
+   "modules": "login",
+   "aoh_match": "color-text, color-text-muted, color-border (Light)"
+  },
+  {
+   "value": "#ffffff@0.40 FRAME",
+   "modules": "login"
+  },
+  {
+   "value": "#bd74ff TEXT (14), #0369a1 stroke (4), #0ea5e9 rings",
+   "modules": "chat"
+  },
+  {
+   "value": "#3b82f6@0.20 VECTOR",
+   "modules": "geofence"
+  },
+  {
+   "value": "#38bdf8, #18181b VECTOR",
+   "modules": "map"
+  },
+  {
+   "value": "Geist Regular 10 (below AOH minimum of 12)",
+   "modules": "chat (240)"
+  }
+ ],
+ "unbound_spacing_authored": {
+  "padLeft 12": "all modules (Chat 893, Responder 486, Incident 472)",
+  "gap 10 (off AOH scale)": "all modules (Chat 627, Responder 366, Incident 313)",
+  "padTop 2 / 10 / 14": "most modules"
+ }
+}

@@ -19,7 +19,8 @@ This is a baseline of the tokens the mobile app uses. It is not yet a parity aud
 | [Map](https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171) | 19,610 | 86.1% | 1,361 | 492 | 96.3% |
 | [Incident](https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082) | 18,250 | 83.9% | 1,095 | 819 | 94.0% |
 | [Directory](https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256) | 6,347 | 82.9% | 532 | 224 | 97.0% |
-| **All six** | **149,585** | **77.7%** | **15,506** | **7,584** | **86.5%** |
+| [Login](https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3) (added later) | 1,100 | 98.5% | 10 | 0 | 98.9% |
+| **All six (excluding Login)** | **149,585** | **77.7%** | **15,506** | **7,584** | **86.5%** |
 
 ## Tokens in use
 
@@ -40,9 +41,9 @@ The most-used tokens on every page are `color-icon`, `color-text`, `color-text-m
   - Never used: `radius-card`.
 - **Size:** `size-button-sm/md/lg/xl`, `size-input-md/lg`, `size-formControll-md/lg`.
 
-### Variables from a remote library that is not AOH
+### Stale variables (not from any linked library)
 
-These collections are not among AOH's collections, which are `.Primitives`, `Semantic colors`, `Spacing`, `Theme` and `Breakpoints`.
+These collections are not among AOH's collections (`.Primitives`, `Semantic colors`, `Spacing`, `Theme`, `Breakpoints`). A library lookup confirmed that no library linked to the file publishes them, so their values are frozen. The web file uses them too (see `2026-10-22-web-tokens.md`).
 
 | Collection | Variables | Pages |
 |---|---|---|
@@ -122,5 +123,5 @@ Most of the hardcoded count comes from a few master components.
 ## Open decisions before the parity audit
 
 1. Exclude system UI drawn by the OS (`Android-nav-bar`, keyboard, status bar) and annotations from parity? Recommended: yes.
-2. Which library is `.Semantic` / `Dimensions`? Retire it, or treat it as part of AOH?
+2. ~~Which library is `.Semantic` / `Dimensions`?~~ Answered: neither is published by any linked library. Rebind to AOH `Spacing` (PAR-006 and PAR-007).
 3. Should `priority level/*` and `comms/*` become AOH semantic tokens, so the web dashboard can match them?

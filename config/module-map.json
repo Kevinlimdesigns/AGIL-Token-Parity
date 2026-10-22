@@ -1,0 +1,71 @@
+{
+ "mobile_file": "e6RBhSWdLlLinhceozYLYe",
+ "web_file": "VYNooSMqyhqJPom58kg8zV",
+ "modules": [
+  {
+   "web": "Incident",
+   "web_node": "19553:372547",
+   "mobile": "Incident (Done)",
+   "mobile_node": "735:47082",
+   "pairing": "direct"
+  },
+  {
+   "web": "Responder",
+   "web_node": "19595:5721",
+   "mobile": "Directory (Semi Done)",
+   "mobile_node": "850:11256",
+   "pairing": "assumed"
+  },
+  {
+   "web": "Chat",
+   "web_node": "19605:7561",
+   "mobile": "Chat (Semi Done)",
+   "mobile_node": "735:51530",
+   "pairing": "direct"
+  },
+  {
+   "web": "Geofence",
+   "web_node": "19615:11620",
+   "mobile": "Map (Semi Done)",
+   "mobile_node": "808:6171",
+   "pairing": "no mobile module; compared with Map"
+  },
+  {
+   "web": "Camera",
+   "web_node": "19622:14597",
+   "mobile": "Comms (Done)",
+   "mobile_node": "735:39373",
+   "pairing": "no mobile module; compared with Comms (PTV video)"
+  },
+  {
+   "web": "Active",
+   "web_node": "19625:15120",
+   "mobile": "Recent (Semi Done)",
+   "mobile_node": "4925:124137",
+   "pairing": "assumed"
+  },
+  {
+   "web": "Map",
+   "web_node": "19630:18977",
+   "mobile": "Map (Semi Done)",
+   "mobile_node": "808:6171",
+   "pairing": "direct"
+  },
+  {
+   "web": "Login",
+   "web_node": "19632:21327",
+   "mobile": "Login",
+   "mobile_node": "21:3",
+   "pairing": "direct"
+  }
+ ],
+ "exclude": [
+  "Android-nav-bar",
+  "Keyboard / Default",
+  "keyboard kit components",
+  "Annotation",
+  "flow arrows",
+  "web module title labels (#eeeeee / Inter 64)"
+ ],
+ "exclude_status": "proposed, not yet confirmed"
+}

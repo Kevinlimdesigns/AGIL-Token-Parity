@@ -1,0 +1,271 @@
+{
+ "updated": "2026-10-22",
+ "items": [
+  {
+   "id": "PAR-001",
+   "severity": "P1",
+   "route": "CHERN-DECISION",
+   "title": "Severity and status colours use different tokens and values",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-002",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Web uses a hardcoded orange with no AOH token",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Geofence",
+    "node": "19615:11620",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620"
+   }
+  },
+  {
+   "id": "PAR-003",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Active, selected and link states use different token families",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-004",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Focus ring uses different tokens",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-005",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Card corner radius differs (8px vs 12px)",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Comms",
+    "node": "735:39373",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-006",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile binds to stale collections .Semantic and Dimensions",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-007",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web binds to the same stale collections",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   }
+  },
+  {
+   "id": "PAR-008",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Avatar is a different component with different tokens",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Directory",
+    "node": "850:11256",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256"
+   },
+   "web": {
+    "frame": "Responder",
+    "node": "19595:5721",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721"
+   }
+  },
+  {
+   "id": "PAR-009",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web Login has hardcoded text and border colours",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  },
+  {
+   "id": "PAR-010",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Icons on dark surfaces use different tokens",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Map",
+    "node": "19630:18977",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977"
+   }
+  },
+  {
+   "id": "PAR-011",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Input borders use a different token name (same value)",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  },
+  {
+   "id": "PAR-012",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Both platforms use gap 10, which is off the AOH spacing scale",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-013",
+   "severity": "P3",
+   "route": "FIX-WEB",
+   "title": "Web Chat uses 10px text, below the AOH minimum",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-014",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Title text styles differ",
+   "status": "new",
+   "first_seen": "2026-10-22",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  }
+ ]
+}
