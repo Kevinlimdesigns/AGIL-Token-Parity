@@ -1,0 +1,1468 @@
+{
+ "audit": "mobile token inventory",
+ "date": "2026-10-22",
+ "file": "e6RBhSWdLlLinhceozYLYe",
+ "library": "AOH UI/ShadCN component library",
+ "library_file": "IQxwVUqzckYn7u7nNhX6lF",
+ "mode": "read-only",
+ "method": "Each page traversed in full. Counts give designer-placed nodes ('authored') and all nodes including instance internals ('total'). Solid fill/stroke paints are classed as bound (variable), style (paint style) or hardcoded.",
+ "pages": {
+  "comms": {
+   "name": "Comms (Done)",
+   "node": "735:39373",
+   "nodes": 42091,
+   "authored": 5188,
+   "text": 7182,
+   "text_styled": 6603,
+   "solid_bound": 24031,
+   "solid_hard": 4138,
+   "solid_style": 1217,
+   "pct_solid_bound": 81.8,
+   "pct_text_styled": 91.9,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373"
+  },
+  "recent": {
+   "name": "Recent (Semi Done)",
+   "node": "4925:124137",
+   "nodes": 4638,
+   "authored": 509,
+   "text": 1049,
+   "text_styled": 932,
+   "solid_bound": 2613,
+   "solid_hard": 290,
+   "solid_style": 108,
+   "pct_solid_bound": 86.8,
+   "pct_text_styled": 88.8,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=4925-124137"
+  },
+  "chat": {
+   "name": "Chat (Semi Done)",
+   "node": "735:51530",
+   "nodes": 58649,
+   "authored": 6042,
+   "text": 9520,
+   "text_styled": 7093,
+   "solid_bound": 28488,
+   "solid_hard": 8090,
+   "solid_style": 4724,
+   "pct_solid_bound": 69.0,
+   "pct_text_styled": 74.5,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+  },
+  "map": {
+   "name": "Map (Semi Done)",
+   "node": "808:6171",
+   "nodes": 19610,
+   "authored": 2534,
+   "text": 3170,
+   "text_styled": 3054,
+   "solid_bound": 11516,
+   "solid_hard": 1361,
+   "solid_style": 492,
+   "pct_solid_bound": 86.1,
+   "pct_text_styled": 96.3,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+  },
+  "incident": {
+   "name": "Incident (Done)",
+   "node": "735:47082",
+   "nodes": 18250,
+   "authored": 1824,
+   "text": 3958,
+   "text_styled": 3719,
+   "solid_bound": 9995,
+   "solid_hard": 1095,
+   "solid_style": 819,
+   "pct_solid_bound": 83.9,
+   "pct_text_styled": 94.0,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+  },
+  "directory": {
+   "name": "Directory (Semi Done)",
+   "node": "850:11256",
+   "nodes": 6347,
+   "authored": 1032,
+   "text": 1144,
+   "text_styled": 1110,
+   "solid_bound": 3676,
+   "solid_hard": 532,
+   "solid_style": 224,
+   "pct_solid_bound": 82.9,
+   "pct_text_styled": 97.0,
+   "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256"
+  }
+ },
+ "variables_used": [
+  {
+   "name": "color-bg",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-subtle",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-elevated",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-strong",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-disabled",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-invers",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent"
+   ]
+  },
+  {
+   "name": "color-bg-primary",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-primary-active",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "color-bg-secondary",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-success-strong",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-success-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "chat"
+   ]
+  },
+  {
+   "name": "color-bg-success-muted-active",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-error-strong",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-bg-error-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "map"
+   ]
+  },
+  {
+   "name": "color-bg-warning-strong",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-warning-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-info-strong",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "map"
+   ]
+  },
+  {
+   "name": "color-bg-info-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-interactive",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-bg-magic-muted-hover",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "chat"
+   ]
+  },
+  {
+   "name": "color-border",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-border-hover",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-border-disabled",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-border-onColor",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "recent",
+    "chat",
+    "map",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-border-focusRing-sidebar",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "recent",
+    "chat",
+    "map"
+   ]
+  },
+  {
+   "name": "color-border-primary",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-border-error",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-border-interactive",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-border-interactive-focus",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "recent",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-icon",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-icon-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-icon-disabled",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "map"
+   ]
+  },
+  {
+   "name": "color-icon-onColor",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-icon-primary",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "chat"
+   ]
+  },
+  {
+   "name": "color-icon-error",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map"
+   ]
+  },
+  {
+   "name": "color-icon-info",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "chat",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-icon-interactive",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text-muted",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text-disabled",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-text-placeholder",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text-inverse",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-text-onColor",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text-success",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "color-text-primary",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "color-text-error",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-text-warning",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "color-text-info",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "incident"
+   ]
+  },
+  {
+   "name": "color-text-interactive",
+   "collection": "Semantic colors",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-3xs",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-2xs",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-sm",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-md",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-lg",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-xl",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-2xl",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "Radius/radius",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Radius/radius-sm",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Radius/radius-lg",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "map"
+   ]
+  },
+  {
+   "name": "Radius/radius-button",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Radius/radius-input",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Radius/radius-iconButton",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Radius/radius-focusRing",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Radius/radius-dialog",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Radius/radius-round",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Size/size-button-sm",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map"
+   ]
+  },
+  {
+   "name": "Size/size-button-md",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Size/size-button-lg",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Size/size-button-xl",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Size/size-input-md",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Size/size-input-lg",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "Size/size-formControll-md",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "chat",
+    "incident"
+   ]
+  },
+  {
+   "name": "Size/size-formControll-lg",
+   "collection": "Spacing",
+   "source": "AOH UI/ShadCN component library",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-2xs",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/input-size-container-md",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/input-size-container-lg",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "Spacing/space-sm",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "chat"
+   ]
+  },
+  {
+   "name": "Spacing/spacing-lg",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "map"
+   ]
+  },
+  {
+   "name": "Radius/rounded-full",
+   "collection": ".Semantic",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "map"
+   ]
+  },
+  {
+   "name": "Spacing/px",
+   "collection": "Dimensions",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Spacing/0.5",
+   "collection": "Dimensions",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "Spacing/space-2",
+   "collection": "Dimensions",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "Border Radius/rounded-full",
+   "collection": "Dimensions",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "map"
+   ]
+  },
+  {
+   "name": "Text & icon/Primary",
+   "collection": "Color Nav bar",
+   "source": "UNKNOWN remote library (not AOH local collections)",
+   "pages": [
+    "comms"
+   ]
+  },
+  {
+   "name": "comms/avatar-surface",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ]
+  },
+  {
+   "name": "comms/bar-surface",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "recent",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "comms/bar-text-primary",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "chat/bubble-out",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "chat/receipt",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "kbd/key",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "map",
+    "directory"
+   ]
+  },
+  {
+   "name": "priority level/minimal",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "recent",
+    "chat"
+   ]
+  },
+  {
+   "name": "priority level/medium",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "chat"
+   ]
+  },
+  {
+   "name": "priority level/high",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "incident"
+   ]
+  },
+  {
+   "name": "priority level/critical",
+   "collection": "App tokens",
+   "source": "local (mobile file)",
+   "pages": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ]
+  },
+  {
+   "name": "state-layer/pressed",
+   "collection": "State layer",
+   "source": "local (mobile file)",
+   "pages": [
+    "map"
+   ]
+  },
+  {
+   "name": "Selected",
+   "collection": "State layer",
+   "source": "local (mobile file)",
+   "pages": [
+    "recent",
+    "map"
+   ]
+  }
+ ],
+ "local_variables_unused_on_these_pages": [
+  "comms/mic-surface",
+  "comms/bar-text-secondary",
+  "chat/bubble-in",
+  "kbd/bg",
+  "kbd/key-alt",
+  "priority level/low",
+  "size/button-critical",
+  "state-layer/focus",
+  "Cheatsheet / Pastel (all 21)"
+ ],
+ "styles_used": {
+  "text_aoh": {
+   "text-xs/font-regular": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "text-xs/font-medium": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-xs/font-semiBold": [
+    "comms",
+    "map"
+   ],
+   "text-xs/font-bold": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "text-sm/font-regular": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-sm/font-medium": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-sm/font-semiBold": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-sm/font-bold": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-base/font-regular": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-base/font-medium": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-base/font-bold": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "text-lg/font-semiBold": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "text-xl/font-bold": [
+    "comms"
+   ],
+   "ShadCN typography/h1": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "ShadCN typography/h2": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "ShadCN typography/h3": [
+    "comms",
+    "incident"
+   ],
+   "ShadCN typography/h4": [
+    "comms",
+    "recent"
+   ],
+   "ShadCN typography/p": [
+    "comms"
+   ],
+   "ShadCN typography/Small": [
+    "comms"
+   ]
+  },
+  "text_foreign": {
+   "Typography/H1- Heading 1": [
+    "comms"
+   ],
+   "Default/Bold/Body": [
+    "comms"
+   ]
+  },
+  "effect_aoh": {
+   "Shadows/sm": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident",
+    "directory"
+   ],
+   "Shadows/sm-strong": [
+    "comms",
+    "recent",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "Shadows/md": [
+    "map"
+   ],
+   "Shadows/lg": [
+    "comms",
+    "chat",
+    "incident"
+   ]
+  },
+  "effect_local": {
+   "Drop Shadow": [
+    "comms",
+    "chat",
+    "map",
+    "incident"
+   ],
+   "Layer Blur": [
+    "chat"
+   ]
+  },
+  "paint_foreign": {
+   "wireframes/colors/secondary/gray": "Android-nav-bar (all pages)",
+   "colors/backgrounds/light": "Android-nav-bar (all pages)",
+   "Neutral/Base, Neutral/Primary, Neutral/Secondary, Neutral / Tertiary, Surface/Light/Primary": "Keyboard kit (remote Key/Icon components) \u2014 comms, chat, incident",
+   "Default Accent/Dark/Accent 1-4": "Keyboard / Default (local) \u2014 comms, chat, incident",
+   "Red, White, Extra Light Grey": "comms only, 2-6 uses"
+  }
+ },
+ "hardcoded_hotspots_by_component": [
+  {
+   "component": "Chat/ Audio bubble [local]",
+   "values": {
+    "#5d6471": 3080,
+    "#5e7c85": 1120,
+    "#404958": 110
+   },
+   "page": "chat (+ comms, recent, map)",
+   "note": "Waveform bars hardcoded in the master. Fix once in the component."
+  },
+  {
+   "component": "Android-nav-bar [local]",
+   "values": {
+    "#949494": 1464,
+    "style wireframes/colors/secondary/gray": 1464,
+    "style colors/backgrounds/light": 488
+   },
+   "page": "all",
+   "note": "OS chrome. Propose excluding from parity."
+  },
+  {
+   "component": "Keyboard / Default [local] + keyboard kit [remote]",
+   "values": {
+    "Default Accent/Dark/*": 980,
+    "Neutral/*": 1500,
+    "#303031 (Icon / Sticker)": 168
+   },
+   "page": "chat, comms, incident",
+   "note": "OS chrome. Propose excluding from parity."
+  },
+  {
+   "component": "Chat / Location Bubble, Chat/ Reply [local]",
+   "values": {
+    "#788496": 135,
+    "#404958": 45
+   },
+   "page": "chat",
+   "note": "Product UI. Should bind to AOH."
+  }
+ ],
+ "hardcoded_authored": [
+  {
+   "value": "#09090b fill on FRAME",
+   "aoh_match": "Colors/Zinc/950 = color-bg (Dark)",
+   "counts": {
+    "comms": 117,
+    "recent": 22,
+    "chat": 42,
+    "map": 63,
+    "directory": 54
+   }
+  },
+  {
+   "value": "#ffffff fill + #0ea5e9 stroke on VECTOR (paired)",
+   "aoh_match": "Base/White, Sky/500",
+   "counts": {
+    "comms": 53,
+    "recent": 2,
+    "chat": 134,
+    "map": 47,
+    "incident": 20,
+    "directory": 24
+   },
+   "note": "Pattern matches flow-arrow/annotation house style. Confirm, then exclude."
+  },
+  {
+   "value": "#ffffff@0.05 RECTANGLE",
+   "aoh_match": "none",
+   "counts": {
+    "directory": 141
+   }
+  },
+  {
+   "value": "#262626 stroke override on INSTANCE (Comms / Call Log Row)",
+   "aoh_match": "Neutral/800 primitive, not semantic",
+   "counts": {
+    "recent": 72,
+    "comms": 26
+   }
+  },
+  {
+   "value": "#8d948a, #98a2aa TEXT",
+   "aoh_match": "none",
+   "counts": {
+    "comms": 44
+   }
+  },
+  {
+   "value": "#ff6565 FRAME",
+   "aoh_match": "none (AOH error = Red/600 L, Red/400 D)",
+   "counts": {
+    "comms": 22
+   }
+  },
+  {
+   "value": "#000000 stroke on FRAME",
+   "aoh_match": "Base/Black",
+   "counts": {
+    "comms": 11,
+    "chat": 43,
+    "map": 25,
+    "incident": 5
+   }
+  }
+ ],
+ "unbound_layout_and_type": {
+  "radius_authored": {
+   "8": "comms 274, map 25, directory 9",
+   "20": "comms 60, chat 134, map 46, incident 20, directory 24",
+   "999/9999/12498.75": "comms 72, chat 36, map 37, incident 5",
+   "2 / 3": "all pages",
+   "fractional (36.57, 31.34, 12.02)": "chat"
+  },
+  "spacing_authored_off_scale": {
+   "gap 10": "comms 305, recent 27, chat 469, map 124, incident 94, directory 58",
+   "padLeft 9": "comms 25, chat 62, map 26, incident 11",
+   "gap 11": "chat 28, incident 5",
+   "fractional (7.99, 8.01, 15.9997)": "comms, chat, map, incident"
+  },
+  "spacing_authored_on_scale_but_unbound": {
+   "gap 8": "comms 671, chat 724, incident 285, map 67",
+   "padLeft 16": "comms 295, chat 730, incident 85",
+   "padTop 8": "comms 417, chat 255"
+  },
+  "raw_fonts": {
+   "Inter (not in AOH)": "Regular 18 on comms 27, chat 62, map 26, incident 11. Also Inter Bold 17, Medium 12, Bold 10, Regular 4-5 on map",
+   "Atkinson Hyperlegible Next": "comms 8",
+   "Geist off-ramp sizes 13 / 15 / 22 / 28 / 30 / 34 / 64": "all pages (e.g. SemiBold 15: chat 190, recent 72, comms 56)",
+   "Geist fractional sizes (12.02, 13.98, 16.64\u2026)": "comms, chat (scaled instances)",
+   "mixed-font text 22 / 10 / 15": "chat 1092, incident 195 (keyboard kit)"
+  },
+  "raw_effects": {
+   "DROP_SHADOW r8/12/16/24 unstyled": "comms, map",
+   "DROP_SHADOW r24.96 / r24.03": "chat, incident"
+  }
+ }
+}
