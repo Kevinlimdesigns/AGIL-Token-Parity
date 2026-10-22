@@ -1,0 +1,280 @@
+<title>AGIL Token Parity Handshake</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, a meta strip up top, then numbered handshake sections (the order is the agreed workflow). Palette borrows AOH's own zinc + sky. */
+:root{
+  --bg:#fafafa; --surface:#ffffff; --ink:#09090b; --muted:#52525b; --line:#e4e4e7; --accent:#0369a1; --accent-soft:#e0f2fe;
+  --p1:#b91c1c; --p1-bg:#fee2e2; --p2:#a16207; --p2-bg:#fef9c3; --p3:#3f3f46; --p3-bg:#f4f4f5; --ok:#047857; --ok-bg:#d1fae5;
+  --display:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#09090b; --surface:#18181b; --ink:#fafafa; --muted:#a1a1aa; --line:#27272a; --accent:#38bdf8; --accent-soft:#0c4a6e;
+  --p1:#fca5a5; --p1-bg:#450a0a; --p2:#fde047; --p2-bg:#422006; --p3:#d4d4d8; --p3-bg:#27272a; --ok:#6ee7b7; --ok-bg:#022c22; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#09090b; --surface:#18181b; --ink:#fafafa; --muted:#a1a1aa; --line:#27272a; --accent:#38bdf8; --accent-soft:#0c4a6e;
+  --p1:#fca5a5; --p1-bg:#450a0a; --p2:#fde047; --p2-bg:#422006; --p3:#d4d4d8; --p3-bg:#27272a; --ok:#6ee7b7; --ok-bg:#022c22; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.25}
+h1{font-size:30px;font-weight:700;letter-spacing:-.01em}
+h2{font-size:20px;font-weight:600;display:flex;gap:10px;align-items:baseline}
+h2 .n{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500}
+h3{font-size:15px;font-weight:600}
+p{margin:0;max-width:68ch}
+.sec{display:flex;flex-direction:column;gap:14px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.lede{color:var(--muted);font-size:16px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.meta div{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.meta dt{font:500 11px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.meta dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+code{font:13px var(--mono);background:var(--p3-bg);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 11px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num{text-align:right;white-space:nowrap}
+.pill{display:inline-block;font:500 11px var(--mono);padding:2px 7px;border-radius:999px;white-space:nowrap}
+.P1{color:var(--p1);background:var(--p1-bg)} .P2{color:var(--p2);background:var(--p2-bg)} .P3{color:var(--p3);background:var(--p3-bg)}
+.route{color:var(--accent);background:var(--accent-soft)}
+.ok{color:var(--ok);background:var(--ok-bg)}
+ul.clean{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;max-width:68ch}
+.decisions{display:flex;flex-direction:column;gap:12px}
+.dec{border:1px solid var(--line);border-left:3px solid var(--p2);border-radius:8px;background:var(--surface);padding:14px 16px;display:grid;gap:8px}
+.dec.p1{border-left-color:var(--p1)} .dec.p3{border-left-color:var(--p3)}
+.dec header{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dec header .id{font:500 12px var(--mono);color:var(--muted)}
+.dec .rec{font-size:14px}
+.dec .rec b{font-weight:600}
+.dec .links{font-size:13px;color:var(--muted)}
+.blank{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:13px;color:var(--muted);align-items:end}
+.blank span:nth-child(even){border-bottom:1px dashed var(--line);min-height:20px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.cols > div{min-width:0}
+.box{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+
+<header class="sec">
+  <span class="eyebrow">Design handshake · token parity</span>
+  <h1>AGIL web dashboard ↔ mobile app: token parity handshake</h1>
+  <p class="lede">This page records what the 22 Oct 2026 audit found, what both platforms already agree on, which decisions are still open, and who fixes what. It ends with the criteria for calling the two platforms "in parity" and a sign-off table.</p>
+  <dl class="meta">
+    <div><dt>Date</dt><dd>22 Oct 2026</dd></div>
+    <div><dt>Reference</dt><dd>Mobile <code>e6RBhSWdLl…</code></dd></div>
+    <div><dt>Compared</dt><dd>Web <code>VYNooSMqyh…</code></dd></div>
+    <div><dt>Library</dt><dd>AOH UI / ShadCN</dd></div>
+    <div><dt>Findings</dt><dd>14 open · 1 P1 · 8 P2 · 5 P3</dd></div>
+    <div><dt>Status</dt><dd>Awaiting decisions</dd></div>
+  </dl>
+</header>
+
+<section class="sec">
+  <h2><span class="n">01</span>Parties</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Role</th><th>Owns in this handshake</th></tr></thead>
+    <tbody>
+      <tr><td>Kevin (design)</td><td>Audit scope, module pairing, Figma fixes in both files, and the AOH library change requests</td></tr>
+      <tr><td>chern (product)</td><td>The 8 items routed CHERN-DECISION in section 04</td></tr>
+      <tr><td>Web dev lead</td><td>Built web matches the agreed tokens once the FIX-WEB items land</td></tr>
+      <tr><td>Mobile dev lead</td><td>Built mobile matches the agreed tokens once the FIX-MOBILE items land</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec">
+  <h2><span class="n">02</span>What was checked</h2>
+  <ul class="clean">
+    <li><b>Scope:</b> 8 web modules against their mobile pages. Each pair compares only the module's own content: the app shell is excluded on both sides (web header, tabs and map; mobile status bar, PTT bar and tab bar).</li>
+    <li><b>Checks:</b> colour tokens by role, colours bound to tokens vs hardcoded, text styles, spacing and radius, shadows, stale bindings and shared AOH components. No layout or screenshot comparison.</li>
+    <li><b>Left out:</b> the Android nav bar, the keyboard, annotations and flow arrows. Different control sizes are expected for touch targets, so they are left out too.</li>
+    <li><b>Read-only:</b> nothing in Figma was changed. Source data and reports are in the <code>AGIL-Token-Parity</code> repo under <code>reports/</code> and <code>inventory/</code>.</li>
+  </ul>
+</section>
+
+<section class="sec">
+  <h2><span class="n">03</span>Already agreed: the shared base layer</h2>
+  <p>Every module pair already uses the same AOH tokens for these roles. Both teams keep them as they are.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Role</th><th>Tokens on both platforms</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>Body text</td><td><code>color-text</code> · <code>color-text-muted</code> · <code>color-text-placeholder</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Icons</td><td><code>color-icon</code> · <code>color-icon-muted</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Surfaces</td><td><code>color-bg</code> · <code>color-bg-elevated</code> · <code>color-bg-subtle</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Dividers and borders</td><td><code>color-border</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Primary button</td><td><code>color-bg-primary</code> + <code>color-text-onColor</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Success</td><td><code>color-bg-success-strong</code></td><td><span class="pill ok">matching</span></td></tr>
+      <tr><td>Shared components</td><td>AOH <code>Button</code> · <code>Icon Button</code> · <code>Input field</code></td><td><span class="pill ok">matching</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Module scoreboard</h3>
+  <p>Each score shows how far the two sides use the same tokens in the same proportions; 100% would mean identical.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Web module</th><th>Mobile page</th><th class="num">Colours</th><th class="num">Text styles</th><th class="num">Spacing</th><th class="num">Bound M / W</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547">Incident</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082">Incident</a></td><td class="num">76%</td><td class="num">61%</td><td class="num">59%</td><td class="num">90.8 / 98.9</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19625-15120">Active</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=4925-124137">Recent</a> <small>(assumed)</small></td><td class="num">70%</td><td class="num">14%</td><td class="num">55%</td><td class="num">91.2 / 98.9</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327">Login</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3">Login</a></td><td class="num">68%</td><td class="num">30%</td><td class="num">54%</td><td class="num">97.8 / 89.0</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561">Chat</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530">Chat</a></td><td class="num">60%</td><td class="num">47%</td><td class="num">48%</td><td class="num">75.1 / 98.6</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721">Responder</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256">Directory</a> <small>(assumed)</small></td><td class="num">60%</td><td class="num">35%</td><td class="num">51%</td><td class="num">85.3 / 98.6</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977">Map</a></td><td><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171">Map</a></td><td class="num">59%</td><td class="num">43%</td><td class="num">56%</td><td class="num">89.7 / 99.0</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620">Geofence</a></td><td>Map <small>(nearest)</small></td><td class="num">61%</td><td class="num">55%</td><td class="num">58%</td><td class="num">89.7 / 98.2</td></tr>
+      <tr><td><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597">Camera</a></td><td>Comms video <small>(nearest)</small></td><td class="num">50%</td><td class="num">21%</td><td class="num">62%</td><td class="num">83.1 / 98.6</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec">
+  <h2><span class="n">04</span>Decisions needed from chern</h2>
+  <p>Each card gives a recommendation. Write the decision in the blank; anything left blank stays open.</p>
+  <div class="decisions">
+
+    <article class="dec p1">
+      <header><span class="pill P1">P1</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-001</span></header>
+      <h3>Which colours mean severity and status?</h3>
+      <p>Mobile uses its own <code>priority level/*</code> tokens (critical <code>#ef4444</code>, high <code>#fb923c</code>, medium <code>#facc15</code>, low <code>#38bdf8</code>, minimal <code>#a1a1aa</code>). Web uses AOH <code>icon-error</code>, <code>icon-warning</code>, <code>icon-info</code> and the <code>warning-muted</code> family. No value matches, so the same incident looks different on each screen.</p>
+      <p class="rec"><b>Recommendation:</b> add five <code>priority/*</code> semantic tokens to AOH, with Light and Dark values, and use them on both platforms. Keep AOH error, warning and info for system messages.</p>
+      <p class="links"><a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082">Mobile Incident</a> · <a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547">Web Incident</a></p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec">
+      <header><span class="pill P2">P2</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-002</span></header>
+      <h3>What does web's orange mean?</h3>
+      <p>Web hardcodes <code>#f97316</code> (Orange/500) in all 8 modules: geofence shapes and draft pins. AOH has no token for it. Mobile's nearest colour is <code>priority level/high</code> <code>#fb923c</code>.</p>
+      <p class="rec"><b>Recommendation:</b> name what it represents, then either give it an AOH token or fold it into the priority tokens from PAR-001.</p>
+      <p class="links"><a href="https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620">Web Geofence</a> · <a href="https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171">Mobile Map</a></p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec">
+      <header><span class="pill P2">P2</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-004</span></header>
+      <h3>One focus ring</h3>
+      <p>Mobile uses <code>border-focusRing-sidebar</code> (Zinc/400, a token meant for the sidebar) and <code>border-interactive-focus</code> (Sky/500). Web uses <code>border-focusRing</code> (Blue/500).</p>
+      <p class="rec"><b>Recommendation:</b> use <code>color-border-focusRing</code> on both.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec">
+      <header><span class="pill P2">P2</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-005</span></header>
+      <h3>Card corners: 8px or 12px</h3>
+      <p>Web cards use <code>radius-card</code> (12px). Mobile cards use <code>radius-dialog</code> (8px) or a hardcoded 8 or 20.</p>
+      <p class="rec"><b>Recommendation:</b> use <code>radius-card</code> for cards on both platforms, and keep <code>radius-dialog</code> for dialogs only.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec">
+      <header><span class="pill P2">P2</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-008</span></header>
+      <h3>One avatar</h3>
+      <p>Web uses the AOH <code>Avatar</code> with <code>size-avatar-*</code>. Mobile uses a local <code>Avatar</code> filled with <code>comms/avatar-surface</code> <code>#2a3f5c</code>.</p>
+      <p class="rec"><b>Recommendation:</b> mobile moves to the AOH Avatar at mobile sizes. If the dark surface is wanted, add it to AOH as a semantic token.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec p3">
+      <header><span class="pill P3">P3</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-010</span></header>
+      <h3>Icons on dark surfaces</h3>
+      <p>Web uses <code>icon-invers</code>; mobile uses <code>icon-onColor</code>. The values differ.</p>
+      <p class="rec"><b>Recommendation:</b> use <code>icon-onColor</code> on brand or status fills and <code>icon-invers</code> on inverse surfaces, on both platforms.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec p3">
+      <header><span class="pill P3">P3</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-012</span></header>
+      <h3>Spacing of 10</h3>
+      <p>Both platforms use an unbound gap of 10, which is not on the AOH scale (8 and 12 are). It appears about 1,000 times on mobile and about 2,000 on web.</p>
+      <p class="rec"><b>Recommendation:</b> keep the AOH scale and move both platforms to 8 or 12, bound to tokens.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+    <article class="dec p3">
+      <header><span class="pill P3">P3</span><span class="pill route">CHERN-DECISION</span><span class="id">PAR-014</span></header>
+      <h3>Title and list text styles</h3>
+      <p>Text styles match only 14–61% per module. Mobile is a size larger (<code>text-sm</code>/<code>base</code>, <code>ShadCN h1/h2</code> titles). Web uses <code>text-xs</code>/<code>sm</code> and <code>text-lg/bold</code> panel titles.</p>
+      <p class="rec"><b>Recommendation:</b> agree a mapping table for screen title, section title, list primary text and list secondary text. Mobile can be one size larger by rule instead of by accident.</p>
+      <div class="blank"><span>Decision</span><span></span><span>Date</span><span></span></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="sec">
+  <h2><span class="n">05</span>Agreed fixes</h2>
+  <p>These need no product decision. Design makes each change in Figma, then the matching dev lead confirms the build.</p>
+  <div class="cols">
+    <div class="box">
+      <h3>Web</h3>
+      <div class="tbl"><table>
+        <tbody>
+          <tr><td><span class="pill P2">P2</span></td><td><b>PAR-003</b> Use <code>-interactive</code> tokens for links, selection and active tabs. Check one component pair first.</td></tr>
+          <tr><td><span class="pill P2">P2</span></td><td><b>PAR-007</b> Rebind stale <code>.Semantic</code> / <code>Dimensions</code> variables to AOH Spacing, in all 8 modules.</td></tr>
+          <tr><td><span class="pill P2">P2</span></td><td><b>PAR-009</b> On Login, bind <code>#09090b</code>, <code>#71717a</code> and <code>#e4e4e7</code> to text, muted text and border tokens, and drop <code>Gradient - Dark</code>.</td></tr>
+          <tr><td><span class="pill P3">P3</span></td><td><b>PAR-013</b> Chat: replace 10px Geist (240 uses) with <code>text-xs</code>.</td></tr>
+          <tr><td><span class="pill P3">check</span></td><td>Login only draws an error icon. Confirm whether the field error states (border, background, text) are missing.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box">
+      <h3>Mobile</h3>
+      <div class="tbl"><table>
+        <tbody>
+          <tr><td><span class="pill P2">P2</span></td><td><b>PAR-006</b> Rebind stale <code>.Semantic</code> / <code>Dimensions</code> variables to AOH Spacing, on all 7 pages.</td></tr>
+          <tr><td><span class="pill P3">P3</span></td><td><b>PAR-011</b> Use <code>color-border-input</code> on input fields (same value today).</td></tr>
+          <tr><td><span class="pill P3">hygiene</span></td><td><code>Chat/ Audio bubble</code> master: bind the waveform colours (about 4,300 hardcoded fills). This takes Chat from 75% bound to above 90%.</td></tr>
+          <tr><td><span class="pill P3">hygiene</span></td><td>Bind the <code>#09090b</code> screen backgrounds to <code>color-bg</code> (Comms, Map, Directory, Recent).</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2><span class="n">06</span>Open questions for Kevin</h2>
+  <ul class="clean">
+    <li>Are <b>Responder ↔ Directory</b> and <b>Active ↔ Recent</b> the right pairs?</li>
+    <li>Geofence and Camera have no mobile module. Should they stay in the audit, compared with the nearest page?</li>
+    <li>Should the OS-drawn UI, annotations and the web title labels stay excluded permanently?</li>
+  </ul>
+</section>
+
+<section class="sec">
+  <h2><span class="n">07</span>Parity is reached when</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Criterion</th><th>Today</th><th>Target</th></tr></thead>
+    <tbody>
+      <tr><td>Open P1 findings</td><td class="num">1</td><td class="num">0</td></tr>
+      <tr><td>Bindings to stale <code>.Semantic</code> / <code>Dimensions</code> variables</td><td>both files</td><td>0 on both</td></tr>
+      <tr><td>Status, links and selection, and focus use the same tokens in every paired module</td><td>0 of 6 pairs</td><td>6 of 6</td></tr>
+      <tr><td>Product UI bound to tokens (OS UI excluded)</td><td>mobile 75–98% · web 89–99%</td><td>≥ 95% each module</td></tr>
+      <tr><td>Text-style mapping table agreed (PAR-014)</td><td>none</td><td>signed off</td></tr>
+      <tr><td>Weekly audit</td><td>first run</td><td>two runs in a row with no new P1 or P2</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec">
+  <h2><span class="n">08</span>Sign-off</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Role</th><th>Name</th><th>Agrees to</th><th>Date</th></tr></thead>
+    <tbody>
+      <tr><td>Design</td><td>Kevin</td><td>Scope, pairing and the fix lists</td><td></td></tr>
+      <tr><td>Product</td><td>chern</td><td>Decisions in section 04</td><td></td></tr>
+      <tr><td>Web dev lead</td><td></td><td>Web fix list and the parity criteria</td><td></td></tr>
+      <tr><td>Mobile dev lead</td><td></td><td>Mobile fix list and the parity criteria</td><td></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<p class="foot">Source: read-only Figma audit, 22 Oct 2026. The severity rubric is proposed until the <code>token-parity-audit</code> skill is in the repo. Detailed reports: <code>reports/2026-10-22-modules.md</code> (by module) and <code>reports/2026-10-22.md</code> (all findings).</p>
+
+</div>
