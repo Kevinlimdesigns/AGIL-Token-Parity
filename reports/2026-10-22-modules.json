@@ -1,0 +1,2584 @@
+{
+ "date": "2026-10-22",
+ "method": "Per-module profiles in inventory/profiles. Match % = histogram intersection of token usage shares (100% = same tokens in the same proportions). Tokens under 0.25% of a module's usage are ignored as noise. Size tokens are left out of spacing/radius match (platform touch targets).",
+ "pairs": [
+  {
+   "web": "Incident",
+   "mobile": "Incident",
+   "pairing": "direct",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082",
+   "coverage": {
+    "web": {
+     "bound": 98.9,
+     "text": 100.0,
+     "hard": 66
+    },
+    "mobile": {
+     "bound": 90.8,
+     "text": 98.7,
+     "hard": 746
+    }
+   },
+   "colour_match": 76,
+   "text_match": 61,
+   "spacing_radius_match": 59,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "partial",
+     "mobile": [
+      "text-muted",
+      "text",
+      "text-placeholder",
+      "text-disabled"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon",
+      "icon-muted"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-elevated",
+      "bg",
+      "bg-subtle",
+      "bg-strong",
+      "bg-secondary",
+      "bg-disabled"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-hover",
+      "border-primary"
+     ],
+     "web": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ],
+     "shared": [
+      "border",
+      "border-primary"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "text-onColor"
+     ],
+     "web": [
+      "text-onColor",
+      "bg-primary",
+      "text-primary"
+     ],
+     "shared": [
+      "bg-primary",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "icon-interactive",
+      "text-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "partial",
+     "mobile": [
+      "text-error"
+     ],
+     "web": [
+      "text-error",
+      "icon-error"
+     ],
+     "shared": [
+      "text-error"
+     ]
+    },
+    {
+     "role": "Warning",
+     "verdict": "partial",
+     "mobile": [
+      "text-warning",
+      "bg-warning-muted"
+     ],
+     "web": [
+      "icon-warning",
+      "bg-warning-muted",
+      "border-warning-muted",
+      "text-warning"
+     ],
+     "shared": [
+      "bg-warning-muted",
+      "text-warning"
+     ]
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "text-success",
+      "bg-success-strong"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 1,
+   "roles_total": 10,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/h1",
+     "ShadCN typography/h2",
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xs/font-bold"
+    ],
+    "web_only": [
+     "text-lg/font-bold"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-button",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-md",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-dialog",
+     "Spacing/spacing-xl"
+    ],
+    "web_only": [
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-lg",
+     "Size/size-button-md",
+     "Size/size-button-xl",
+     "Size/size-formControll-lg",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-sm",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-formControll-md",
+     "Size/size-input-md",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Drop Shadow",
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 1873,
+    "web": 755
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 94,
+    "priority level/critical": 67,
+    "chat/bubble-out": 27,
+    "comms/bar-text-primary": 16,
+    "priority level/high": 16,
+    "comms/bar-surface": 4,
+    "chat/receipt": 2
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#5e7c85",
+      336
+     ],
+     [
+      "#ffffff",
+      227
+     ],
+     [
+      "#141418@70",
+      26
+     ],
+     [
+      "#0ea5e9",
+      26
+     ],
+     [
+      "#000000@35",
+      24
+     ],
+     [
+      "#000000",
+      16
+     ]
+    ],
+    "web": [
+     [
+      "#f97316",
+      38
+     ],
+     [
+      "#f97316@30",
+      26
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [
+     "Button",
+     "Icon Button",
+     "Input field"
+    ],
+    "mobile_only": [
+     "Label",
+     "Parts/Divider"
+    ],
+    "web_only": [
+     "Badge",
+     "Parts/selectItem",
+     "Select",
+     "Textarea",
+     "Toast - Dismissable",
+     "arrow-down",
+     "arrow-up-down",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Chat",
+   "mobile": "Chat",
+   "pairing": "direct",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530",
+   "coverage": {
+    "web": {
+     "bound": 98.6,
+     "text": 95.3,
+     "hard": 192
+    },
+    "mobile": {
+     "bound": 75.1,
+     "text": 78.7,
+     "hard": 5920
+    }
+   },
+   "colour_match": 60,
+   "text_match": 47,
+   "spacing_radius_match": 48,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "match",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon",
+      "icon-muted"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-subtle",
+      "bg-elevated",
+      "bg",
+      "bg-strong",
+      "bg-secondary"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-hover",
+      "border-primary"
+     ],
+     "web": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ],
+     "shared": [
+      "border",
+      "border-primary"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "text-onColor",
+      "icon-onColor"
+     ],
+     "web": [
+      "bg-primary",
+      "text-onColor",
+      "text-primary",
+      "icon-onColor",
+      "icon-primary"
+     ],
+     "shared": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "partial",
+     "mobile": [
+      "icon-interactive",
+      "text-interactive",
+      "bg-interactive"
+     ],
+     "web": [
+      "icon-interactive"
+     ],
+     "shared": [
+      "icon-interactive"
+     ]
+    },
+    {
+     "role": "Focus ring",
+     "verdict": "mobile only",
+     "mobile": [
+      "border-focusRing-sidebar"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Inverse",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "text-inverse",
+      "bg-invers"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "partial",
+     "mobile": [
+      "text-error",
+      "icon-error",
+      "bg-error-strong"
+     ],
+     "web": [
+      "icon-error"
+     ],
+     "shared": [
+      "icon-error"
+     ]
+    },
+    {
+     "role": "Warning",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-warning",
+      "bg-warning-muted",
+      "border-warning-muted",
+      "text-warning"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "bg-success-strong",
+      "text-success"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 2,
+   "roles_total": 12,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-bold",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/h1",
+     "ShadCN typography/h2",
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold"
+    ],
+    "web_only": [
+     "text-xs/font-semiBold"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-sm",
+     "Spacing/spacing-xl"
+    ],
+    "mobile_only": [
+     "Radius/radius-button",
+     "Radius/radius-dialog"
+    ],
+    "web_only": [
+     "Radius/radius-card",
+     "Radius/radius-iconButton",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-md",
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-lg",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-button-xl",
+     "Size/size-formControll-lg",
+     "Size/size-formControll-md",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-sm",
+     "Size/size-avatar-xs",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-input-md",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Drop Shadow",
+     "Layer Blur",
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/md",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 472,
+    "web": 191
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 797,
+    "chat/bubble-out": 405,
+    "priority level/critical": 41,
+    "priority level/medium": 16,
+    "chat/receipt": 11,
+    "comms/bar-text-primary": 4,
+    "priority level/minimal": 1
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#5d6471",
+      3080
+     ],
+     [
+      "#5e7c85",
+      1120
+     ],
+     [
+      "#ffffff",
+      248
+     ],
+     [
+      "#fafafa",
+      218
+     ],
+     [
+      "#404958",
+      155
+     ],
+     [
+      "#0ea5e9",
+      153
+     ]
+    ],
+    "web": [
+     [
+      "#f97316",
+      96
+     ],
+     [
+      "#f97316@30",
+      49
+     ],
+     [
+      "#bd74ff",
+      14
+     ],
+     [
+      "#ffffff",
+      10
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [],
+    "mobile_only": [
+     "Button"
+    ],
+    "web_only": [
+     "Badge",
+     "Chat (List)",
+     "Chat Bubble",
+     "Icon Button",
+     "Input field",
+     "Parts/Divider",
+     "Parts/selectItem",
+     "arrow-down",
+     "arrow-up-down",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Map",
+   "mobile": "Map",
+   "pairing": "direct",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171",
+   "coverage": {
+    "web": {
+     "bound": 99.0,
+     "text": 100.0,
+     "hard": 56
+    },
+    "mobile": {
+     "bound": 89.7,
+     "text": 93.7,
+     "hard": 794
+    }
+   },
+   "colour_match": 59,
+   "text_match": 43,
+   "spacing_radius_match": 56,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "match",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon",
+      "icon-muted"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-secondary",
+      "bg-elevated",
+      "bg-strong",
+      "bg-subtle",
+      "bg",
+      "bg-disabled"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-primary",
+      "border-onColor",
+      "border-hover",
+      "border-disabled"
+     ],
+     "web": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ],
+     "shared": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ],
+     "web": [
+      "text-onColor",
+      "bg-primary",
+      "text-primary",
+      "icon-onColor"
+     ],
+     "shared": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "icon-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Focus ring",
+     "verdict": "mobile only",
+     "mobile": [
+      "border-focusRing-sidebar"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Inverse",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-invers",
+      "text-inverse",
+      "bg-invers"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "different",
+     "mobile": [
+      "text-error"
+     ],
+     "web": [
+      "icon-error"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Warning",
+     "verdict": "partial",
+     "mobile": [
+      "bg-warning-strong"
+     ],
+     "web": [
+      "bg-warning-strong",
+      "icon-warning",
+      "bg-warning-muted",
+      "border-warning-muted",
+      "text-warning"
+     ],
+     "shared": [
+      "bg-warning-strong"
+     ]
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "bg-success-strong",
+      "text-success"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 2,
+   "roles_total": 12,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/h1",
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-lg/font-semiBold",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xs/font-bold"
+    ],
+    "web_only": [
+     "text-xs/font-light",
+     "text-xs/font-semiBold"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-md",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-button",
+     "Radius/radius-dialog",
+     "Radius/radius-focusRing",
+     "Spacing/spacing-lg"
+    ],
+    "web_only": [
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-lg",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-button-xl",
+     "Size/size-formControll-lg",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-sm",
+     "Size/size-button-sm",
+     "Size/size-formControll-sm",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Drop Shadow",
+     "Shadows/md",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/md",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 1112,
+    "web": 74
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 255,
+    "Selected": 48,
+    "priority level/critical": 31,
+    "comms/bar-text-primary": 20,
+    "comms/bar-surface": 6,
+    "chat/bubble-out": 3,
+    "state-layer/pressed": 2,
+    "chat/receipt": 2,
+    "kbd/key": 1
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#000000",
+      193
+     ],
+     [
+      "#ffffff",
+      132
+     ],
+     [
+      "#09090b",
+      64
+     ],
+     [
+      "#1e1e2a",
+      56
+     ],
+     [
+      "#0ea5e9",
+      48
+     ],
+     [
+      "#3a3a48",
+      32
+     ]
+    ],
+    "web": [
+     [
+      "#f97316",
+      32
+     ],
+     [
+      "#f97316@30",
+      17
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [
+     "Input field"
+    ],
+    "mobile_only": [
+     "Parts/Divider",
+     "clipboard-list",
+     "cloud-off",
+     "copy",
+     "x"
+    ],
+    "web_only": [
+     "Badge",
+     "Icon Button",
+     "Parts/dropdownMenu",
+     "Parts/selectItem",
+     "Radio Group",
+     "arrow-down",
+     "arrow-up-down",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Login",
+   "mobile": "Login",
+   "pairing": "direct",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3",
+   "coverage": {
+    "web": {
+     "bound": 89.0,
+     "text": 97.9,
+     "hard": 35
+    },
+    "mobile": {
+     "bound": 97.8,
+     "text": 99.2,
+     "hard": 9
+    }
+   },
+   "colour_match": 68,
+   "text_match": 30,
+   "spacing_radius_match": 54,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "partial",
+     "mobile": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "web": [
+      "text",
+      "text-muted"
+     ],
+     "shared": [
+      "text",
+      "text-muted"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon-muted",
+      "icon"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "match",
+     "mobile": [
+      "bg-elevated",
+      "bg",
+      "bg-secondary"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "match",
+     "mobile": [
+      "border"
+     ],
+     "web": [
+      "border"
+     ],
+     "shared": [
+      "border"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "icon-primary"
+     ],
+     "web": [
+      "text-onColor",
+      "bg-primary"
+     ],
+     "shared": [
+      "bg-primary"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "text-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Inverse",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "text-inverse"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "partial",
+     "mobile": [
+      "icon-error",
+      "border-error",
+      "bg-error-muted",
+      "text-error"
+     ],
+     "web": [
+      "icon-error"
+     ],
+     "shared": [
+      "icon-error"
+     ]
+    },
+    {
+     "role": "Warning",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-warning"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 3,
+   "roles_total": 10,
+   "text": {
+    "shared": [
+     "text-sm/font-medium",
+     "text-sm/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/Small",
+     "ShadCN typography/h1",
+     "ShadCN typography/h2",
+     "text-base/font-bold",
+     "text-base/font-medium",
+     "text-base/font-regular",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xl/font-bold",
+     "text-xs/font-bold"
+    ],
+    "web_only": [
+     "ShadCN typography/h3",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-button",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-md",
+     "Spacing/spacing-sm",
+     "Spacing/spacing-xl"
+    ],
+    "mobile_only": [],
+    "web_only": [
+     "Radius/radius-card",
+     "Radius/radius-lg",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xl",
+     "Spacing/spacing-3xl",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-xl",
+     "Size/size-input-lg"
+    ],
+    "web": [
+     "Size/size-button-sm",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 120,
+    "web": 24
+   },
+   "local_tokens_mobile": {},
+   "hardcoded": {
+    "mobile": [],
+    "web": [
+     [
+      "#ffffff@40",
+      9
+     ],
+     [
+      "#09090b",
+      6
+     ],
+     [
+      "#e4e4e7",
+      6
+     ],
+     [
+      "#71717a",
+      6
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [
+     "Button",
+     "Input field"
+    ],
+    "mobile_only": [
+     "Toast Messages"
+    ],
+    "web_only": [
+     "Badge",
+     "Icon Button",
+     "logo"
+    ]
+   }
+  },
+  {
+   "web": "Responder",
+   "mobile": "Directory",
+   "pairing": "assumed",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256",
+   "coverage": {
+    "web": {
+     "bound": 98.6,
+     "text": 97.7,
+     "hard": 139
+    },
+    "mobile": {
+     "bound": 85.3,
+     "text": 97.2,
+     "hard": 327
+    }
+   },
+   "colour_match": 60,
+   "text_match": 35,
+   "spacing_radius_match": 51,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "match",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon",
+      "icon-muted"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-elevated",
+      "bg",
+      "bg-subtle",
+      "bg-strong",
+      "bg-secondary"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border"
+     ],
+     "web": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ],
+     "shared": [
+      "border"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "text-onColor"
+     ],
+     "web": [
+      "icon-primary",
+      "text-onColor",
+      "text-primary",
+      "bg-primary"
+     ],
+     "shared": [
+      "bg-primary",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "different",
+     "mobile": [
+      "icon-interactive",
+      "text-interactive"
+     ],
+     "web": [
+      "border-interactive"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Warning",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-warning",
+      "text-warning",
+      "bg-warning-muted",
+      "border-warning"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "bg-success-strong",
+      "text-success"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "bg-info-strong",
+      "icon-info"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 2,
+   "roles_total": 9,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-medium"
+    ],
+    "mobile_only": [
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold"
+    ],
+    "web_only": [
+     "text-xl/font-bold",
+     "text-xs/font-light",
+     "text-xs/font-regular"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius-dialog",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-sm",
+     "Spacing/spacing-xl"
+    ],
+    "web_only": [
+     "Radius/radius",
+     "Radius/radius-button",
+     "Radius/radius-lg",
+     "Spacing/spacing-md",
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-xl",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-sm",
+     "Size/size-avatar-xs",
+     "Size/size-button-sm",
+     "Size/size-formControll-md",
+     "Size/size-input-md",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Shadows/sm"
+    ],
+    "web": [
+     "Shadows/lg",
+     "Shadows/md",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 92,
+    "web": 325
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 140,
+    "kbd/key": 2
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#ffffff@5",
+      141
+     ],
+     [
+      "#09090b",
+      54
+     ],
+     [
+      "#ffffff",
+      36
+     ],
+     [
+      "#0ea5e9",
+      24
+     ],
+     [
+      "#1e293b@50",
+      10
+     ],
+     [
+      "#fafafa",
+      10
+     ]
+    ],
+    "web": [
+     [
+      "#ffffff",
+      52
+     ],
+     [
+      "#f97316",
+      30
+     ],
+     [
+      "#f97316@30",
+      28
+     ],
+     [
+      "#000000",
+      26
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [],
+    "mobile_only": [
+     "users-2"
+    ],
+    "web_only": [
+     "Avatar",
+     "Badge",
+     "Icon Button",
+     "Input field",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Active",
+   "mobile": "Recent",
+   "pairing": "assumed",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19625-15120",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=4925-124137",
+   "coverage": {
+    "web": {
+     "bound": 98.9,
+     "text": 100.0,
+     "hard": 47
+    },
+    "mobile": {
+     "bound": 91.2,
+     "text": 84.3,
+     "hard": 157
+    }
+   },
+   "colour_match": 70,
+   "text_match": 14,
+   "spacing_radius_match": 55,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "match",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon-muted",
+      "icon"
+     ],
+     "web": [
+      "icon",
+      "icon-muted"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg",
+      "bg-elevated",
+      "bg-subtle",
+      "bg-secondary",
+      "bg-strong"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-secondary",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-primary"
+     ],
+     "web": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ],
+     "shared": [
+      "border",
+      "border-primary"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "text-onColor",
+      "bg-primary",
+      "icon-onColor"
+     ],
+     "web": [
+      "text-onColor",
+      "bg-primary",
+      "text-primary",
+      "icon-onColor"
+     ],
+     "shared": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "border-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Inverse",
+     "verdict": "partial",
+     "mobile": [
+      "text-inverse",
+      "bg-invers"
+     ],
+     "web": [
+      "bg-invers"
+     ],
+     "shared": [
+      "bg-invers"
+     ]
+    },
+    {
+     "role": "Error",
+     "verdict": "partial",
+     "mobile": [
+      "icon-error",
+      "bg-error-muted"
+     ],
+     "web": [
+      "icon-error"
+     ],
+     "shared": [
+      "icon-error"
+     ]
+    },
+    {
+     "role": "Warning",
+     "verdict": "different",
+     "mobile": [
+      "bg-warning-strong"
+     ],
+     "web": [
+      "icon-warning",
+      "bg-warning-muted",
+      "border-warning-muted",
+      "text-warning"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Success",
+     "verdict": "match",
+     "mobile": [
+      "bg-success-strong"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 3,
+   "roles_total": 11,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular"
+    ],
+    "mobile_only": [
+     "text-base/font-bold",
+     "text-lg/font-semiBold",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xs/font-bold"
+    ],
+    "web_only": [
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius-button",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-dialog"
+    ],
+    "web_only": [
+     "Radius/radius",
+     "Spacing/spacing-md",
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-xl",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-xs",
+     "Size/size-button-sm",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 16,
+    "web": 0
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 156,
+    "priority level/minimal": 53,
+    "Selected": 1,
+    "priority level/critical": 1
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#262626",
+      72
+     ],
+     [
+      "#5d6471",
+      28
+     ],
+     [
+      "#09090b",
+      22
+     ],
+     [
+      "#ffffff",
+      14
+     ]
+    ],
+    "web": [
+     [
+      "#f97316",
+      30
+     ],
+     [
+      "#f97316@30",
+      15
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [],
+    "mobile_only": [],
+    "web_only": [
+     "Badge",
+     "Icon Button",
+     "Input field",
+     "Parts/selectItem",
+     "arrow-down",
+     "arrow-up-down",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Geofence",
+   "mobile": "Map",
+   "pairing": "no mobile module, nearest page",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171",
+   "coverage": {
+    "web": {
+     "bound": 98.2,
+     "text": 99.8,
+     "hard": 92
+    },
+    "mobile": {
+     "bound": 89.7,
+     "text": 93.7,
+     "hard": 794
+    }
+   },
+   "colour_match": 61,
+   "text_match": 55,
+   "spacing_radius_match": 58,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "match",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "web": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "match",
+     "mobile": [
+      "icon",
+      "icon-muted"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-secondary",
+      "bg-elevated",
+      "bg-strong",
+      "bg-subtle",
+      "bg",
+      "bg-disabled"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-primary",
+      "border-onColor",
+      "border-hover",
+      "border-disabled"
+     ],
+     "web": [
+      "border",
+      "border-primary",
+      "border-onColor"
+     ],
+     "shared": [
+      "border",
+      "border-onColor",
+      "border-primary"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ],
+     "web": [
+      "text-onColor",
+      "icon-onColor",
+      "bg-primary",
+      "text-primary"
+     ],
+     "shared": [
+      "bg-primary",
+      "icon-onColor",
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "icon-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Focus ring",
+     "verdict": "mobile only",
+     "mobile": [
+      "border-focusRing-sidebar"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Inverse",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-invers",
+      "text-inverse",
+      "bg-invers"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "mobile only",
+     "mobile": [
+      "text-error"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Warning",
+     "verdict": "partial",
+     "mobile": [
+      "bg-warning-strong"
+     ],
+     "web": [
+      "bg-warning-strong",
+      "icon-warning"
+     ],
+     "shared": [
+      "bg-warning-strong"
+     ]
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "bg-success-strong",
+      "text-success"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 2,
+   "roles_total": 12,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/h1",
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-lg/font-semiBold",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xs/font-bold"
+    ],
+    "web_only": [
+     "text-xs/font-semiBold"
+    ]
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-button",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Radius/radius-sm",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-md",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-dialog",
+     "Radius/radius-focusRing"
+    ],
+    "web_only": [
+     "Spacing/spacing-xs"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-lg",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-button-xl",
+     "Size/size-formControll-lg",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-avatar-xs",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-formControll-md",
+     "Size/size-formControll-sm",
+     "Size/size-input-md",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Drop Shadow",
+     "Shadows/md",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ]
+   },
+   "stale": {
+    "mobile": 1112,
+    "web": 276
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 255,
+    "Selected": 48,
+    "priority level/critical": 31,
+    "comms/bar-text-primary": 20,
+    "comms/bar-surface": 6,
+    "chat/bubble-out": 3,
+    "state-layer/pressed": 2,
+    "chat/receipt": 2,
+    "kbd/key": 1
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#000000",
+      193
+     ],
+     [
+      "#ffffff",
+      132
+     ],
+     [
+      "#09090b",
+      64
+     ],
+     [
+      "#1e1e2a",
+      56
+     ],
+     [
+      "#0ea5e9",
+      48
+     ],
+     [
+      "#3a3a48",
+      32
+     ]
+    ],
+    "web": [
+     [
+      "#f97316",
+      65
+     ],
+     [
+      "#f97316@30",
+      17
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [
+     "Input field"
+    ],
+    "mobile_only": [
+     "Parts/Divider",
+     "clipboard-list",
+     "cloud-off",
+     "copy",
+     "x"
+    ],
+    "web_only": [
+     "Badge",
+     "Button",
+     "Checkbox",
+     "Icon Button",
+     "Select",
+     "message-square-dashed"
+    ]
+   }
+  },
+  {
+   "web": "Camera",
+   "mobile": "Comms (PTV video)",
+   "pairing": "no mobile module, nearest page",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373",
+   "coverage": {
+    "web": {
+     "bound": 98.6,
+     "text": 100.0,
+     "hard": 20
+    },
+    "mobile": {
+     "bound": 83.1,
+     "text": 88.8,
+     "hard": 2848
+    }
+   },
+   "colour_match": 50,
+   "text_match": 21,
+   "spacing_radius_match": 62,
+   "roles": [
+    {
+     "role": "Text",
+     "verdict": "partial",
+     "mobile": [
+      "text",
+      "text-muted",
+      "text-placeholder",
+      "text-disabled"
+     ],
+     "web": [
+      "text-muted",
+      "text",
+      "text-placeholder"
+     ],
+     "shared": [
+      "text",
+      "text-muted",
+      "text-placeholder"
+     ]
+    },
+    {
+     "role": "Icon",
+     "verdict": "partial",
+     "mobile": [
+      "icon",
+      "icon-muted",
+      "icon-disabled"
+     ],
+     "web": [
+      "icon-muted",
+      "icon"
+     ],
+     "shared": [
+      "icon",
+      "icon-muted"
+     ]
+    },
+    {
+     "role": "Surfaces",
+     "verdict": "partial",
+     "mobile": [
+      "bg-subtle",
+      "bg-elevated",
+      "bg-strong",
+      "bg",
+      "bg-disabled"
+     ],
+     "web": [
+      "bg",
+      "bg-elevated",
+      "bg-subtle"
+     ],
+     "shared": [
+      "bg",
+      "bg-elevated",
+      "bg-subtle"
+     ]
+    },
+    {
+     "role": "Borders",
+     "verdict": "partial",
+     "mobile": [
+      "border",
+      "border-hover",
+      "border-disabled"
+     ],
+     "web": [
+      "border",
+      "border-onColor"
+     ],
+     "shared": [
+      "border"
+     ]
+    },
+    {
+     "role": "Primary action",
+     "verdict": "partial",
+     "mobile": [
+      "bg-primary",
+      "text-onColor",
+      "icon-onColor"
+     ],
+     "web": [
+      "text-onColor"
+     ],
+     "shared": [
+      "text-onColor"
+     ]
+    },
+    {
+     "role": "Interactive / selected / link",
+     "verdict": "mobile only",
+     "mobile": [
+      "border-interactive",
+      "icon-interactive",
+      "text-interactive"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Error",
+     "verdict": "mobile only",
+     "mobile": [
+      "icon-error",
+      "bg-error-muted",
+      "text-error"
+     ],
+     "web": [],
+     "shared": []
+    },
+    {
+     "role": "Warning",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-warning"
+     ],
+     "shared": []
+    },
+    {
+     "role": "Success",
+     "verdict": "partial",
+     "mobile": [
+      "bg-success-strong",
+      "text-success"
+     ],
+     "web": [
+      "bg-success-strong"
+     ],
+     "shared": [
+      "bg-success-strong"
+     ]
+    },
+    {
+     "role": "Info",
+     "verdict": "web only",
+     "mobile": [],
+     "web": [
+      "icon-info",
+      "bg-info-strong"
+     ],
+     "shared": []
+    }
+   ],
+   "roles_matching": 0,
+   "roles_total": 10,
+   "text": {
+    "shared": [
+     "text-base/font-medium",
+     "text-sm/font-medium",
+     "text-sm/font-regular",
+     "text-xs/font-medium",
+     "text-xs/font-regular"
+    ],
+    "mobile_only": [
+     "ShadCN typography/h1",
+     "ShadCN typography/h2",
+     "text-base/font-bold",
+     "text-base/font-regular",
+     "text-lg/font-semiBold",
+     "text-sm/font-bold",
+     "text-sm/font-semiBold",
+     "text-xs/font-bold",
+     "text-xs/font-semiBold"
+    ],
+    "web_only": []
+   },
+   "spacing": {
+    "shared": [
+     "Radius/radius",
+     "Radius/radius-iconButton",
+     "Radius/radius-input",
+     "Radius/radius-round",
+     "Spacing/spacing-2xs",
+     "Spacing/spacing-3xs",
+     "Spacing/spacing-sm"
+    ],
+    "mobile_only": [
+     "Radius/radius-button",
+     "Radius/radius-dialog",
+     "Radius/radius-sm",
+     "Spacing/spacing-lg",
+     "Spacing/spacing-xl"
+    ],
+    "web_only": [
+     "Spacing/spacing-md"
+    ]
+   },
+   "sizes": {
+    "mobile": [
+     "Size/size-button-lg",
+     "Size/size-button-md",
+     "Size/size-button-sm",
+     "Size/size-button-xl",
+     "Size/size-formControll-lg",
+     "Size/size-input-lg",
+     "Size/size-input-md"
+    ],
+    "web": [
+     "Size/size-avatar-md",
+     "Size/size-button-sm",
+     "Size/size-input-sm"
+    ]
+   },
+   "effects": {
+    "mobile": [
+     "Drop Shadow",
+     "Shadows/lg",
+     "Shadows/sm",
+     "Shadows/sm-strong"
+    ],
+    "web": [
+     "Shadows/sm"
+    ]
+   },
+   "stale": {
+    "mobile": 327,
+    "web": 0
+   },
+   "local_tokens_mobile": {
+    "comms/avatar-surface": 1303,
+    "priority level/critical": 51,
+    "chat/bubble-out": 35,
+    "priority level/minimal": 26,
+    "comms/bar-text-primary": 22,
+    "chat/receipt": 1
+   },
+   "hardcoded": {
+    "mobile": [
+     [
+      "#5d6471",
+      728
+     ],
+     [
+      "#5e7c85",
+      672
+     ],
+     [
+      "#adadad",
+      200
+     ],
+     [
+      "#ffffff",
+      147
+     ],
+     [
+      "#09090b",
+      117
+     ],
+     [
+      "#8d948a",
+      80
+     ]
+    ],
+    "web": [
+     [
+      "#f97316@30",
+      9
+     ],
+     [
+      "#f97316",
+      9
+     ]
+    ]
+   },
+   "aoh_components": {
+    "shared": [
+     "Input field"
+    ],
+    "mobile_only": [
+     "Button"
+    ],
+    "web_only": [
+     "Icon Button",
+     "message-square-dashed"
+    ]
+   }
+  }
+ ]
+}
