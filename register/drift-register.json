@@ -1,13 +1,14 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "items": [
   {
    "id": "PAR-001",
    "severity": "P1",
    "route": "CHERN-DECISION",
    "title": "Severity and status colours use different tokens and values",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Incident",
@@ -24,9 +25,10 @@
    "id": "PAR-002",
    "severity": "P2",
    "route": "CHERN-DECISION",
-   "title": "Web uses a hardcoded orange with no AOH token",
-   "status": "new",
+   "title": "Web uses a hardcoded orange #f97316 with no AOH token",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Map",
@@ -44,8 +46,9 @@
    "severity": "P2",
    "route": "FIX-WEB",
    "title": "Active, selected and link states use different token families",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Chat",
@@ -63,8 +66,9 @@
    "severity": "P2",
    "route": "CHERN-DECISION",
    "title": "Focus ring uses different tokens",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Chat",
@@ -82,8 +86,9 @@
    "severity": "P2",
    "route": "CHERN-DECISION",
    "title": "Card corner radius differs (8px vs 12px)",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Comms",
@@ -101,8 +106,9 @@
    "severity": "P2",
    "route": "FIX-MOBILE",
    "title": "Mobile binds to stale collections .Semantic and Dimensions",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Incident",
@@ -120,8 +126,9 @@
    "severity": "P2",
    "route": "FIX-WEB",
    "title": "Web binds to the same stale collections",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Incident",
@@ -139,8 +146,9 @@
    "severity": "P2",
    "route": "CHERN-DECISION",
    "title": "Avatar is a different component with different tokens",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Directory",
@@ -157,9 +165,10 @@
    "id": "PAR-009",
    "severity": "P2",
    "route": "FIX-WEB",
-   "title": "Web Login has hardcoded text and border colours",
-   "status": "new",
+   "title": "Web Login hardcodes text, surface and border colours",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Login",
@@ -177,8 +186,9 @@
    "severity": "P3",
    "route": "CHERN-DECISION",
    "title": "Icons on dark surfaces use different tokens",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Map",
@@ -196,8 +206,9 @@
    "severity": "P3",
    "route": "FIX-MOBILE",
    "title": "Input borders use a different token name (same value)",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Login",
@@ -214,9 +225,10 @@
    "id": "PAR-012",
    "severity": "P3",
    "route": "CHERN-DECISION",
-   "title": "Both platforms use gap 10, which is off the AOH spacing scale",
-   "status": "new",
+   "title": "Off-scale spacing: gap 10 (and 14) unbound on web; mobile has its own off-scale values",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Chat",
@@ -233,9 +245,10 @@
    "id": "PAR-013",
    "severity": "P3",
    "route": "FIX-WEB",
-   "title": "Web Chat uses 10px text, below the AOH minimum",
-   "status": "new",
+   "title": "Web Chat has text with no style",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Chat",
@@ -253,8 +266,9 @@
    "severity": "P3",
    "route": "CHERN-DECISION",
    "title": "Title text styles differ",
-   "status": "new",
+   "status": "persisting",
    "first_seen": "2026-10-22",
+   "last_seen": "2026-10-23",
    "weeks_open": 1,
    "mobile": {
     "frame": "Login",
@@ -265,6 +279,86 @@
     "frame": "Login",
     "node": "19632:21327",
     "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   }
+  },
+  {
+   "id": "PAR-015",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile Directory camera and drone sheets are hardcoded",
+   "status": "new",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "6.2a Camera Detail Sheet",
+    "node": "904:4",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=904-4"
+   },
+   "web": {
+    "frame": "Responder",
+    "node": "19595:5721",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721"
+   }
+  },
+  {
+   "id": "PAR-016",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile Comms and Recent use hardcoded greys on dark frames",
+   "status": "new",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Call Log — states",
+    "node": "2349:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=2349-3"
+   },
+   "web": {
+    "frame": "Camera",
+    "node": "19622:14597",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597"
+   }
+  },
+  {
+   "id": "PAR-017",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Mobile spacing and radius have fractional and extreme unbound values",
+   "status": "new",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   }
+  },
+  {
+   "id": "PAR-018",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Mobile text with no style",
+   "status": "new",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "weeks_open": 1,
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
    }
   }
  ]

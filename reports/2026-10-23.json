@@ -1,0 +1,1799 @@
+{
+ "report": "web vs mobile token parity",
+ "date": "2026-10-23",
+ "previous": "2026-10-22",
+ "mode": "read-only",
+ "inputs": {
+  "modules": "config/module-map.json (modules.yaml does not exist in the repo; module-map.json holds the same pairs, node IDs and exclusions)",
+  "previous_report": "reports/2026-10-22.json"
+ },
+ "files": {
+  "mobile": "e6RBhSWdLlLinhceozYLYe",
+  "web": "VYNooSMqyhqJPom58kg8zV",
+  "library": "AOH UI / ShadCN"
+ },
+ "method": {
+  "screens": "Screens are FRAME nodes directly under the mapped web section, or under a section on the mapped mobile page. Nodes inside instances count only when overridden; each component master reached is counted once per module.",
+  "bound": "Share of visible solid fills and strokes bound to a variable or style. Module Bound % = mean over screens plus one unit for all masters, equal weight. Pooled and masters-only values are also given.",
+  "roles": "Role comes from the node type and ancestors, with status/interactive/focus read from the token name. A role agrees when the dominant token matches or each side's dominant token is in the other's top two. Focus uses masters when no screen has a focus paint.",
+  "scale": "Off-scale = unbound spacing not in {2,4,6,8,12,16,24,32,48} or unbound radius not in {4,6,8,12,pill}; scale taken from AOH variables bound in these files. Radii of 100+ count as pill. Counts use the top values returned per module, so tails are slightly under-counted.",
+  "comparability": "Last week's bound % used content profiles that dropped chrome and counted instance internals, so the delta column is not like-for-like. This run is the new baseline."
+ },
+ "counts": {
+  "P1": 1,
+  "P2": 10,
+  "P3": 7
+ },
+ "routes": {
+  "CHERN-DECISION": 8,
+  "FIX-WEB": 4,
+  "FIX-MOBILE": 6
+ },
+ "statuses": {
+  "persisting": 14,
+  "new": 4
+ },
+ "modules": [
+  {
+   "web": "Incident",
+   "mobile": "Incident",
+   "pairing": "direct",
+   "web_node": "19553:372547",
+   "mobile_node": "735:47082",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082",
+   "screens": {
+    "web": 26,
+    "mobile": 124
+   },
+   "bound_pct": {
+    "web": 98.4,
+    "mobile": 90.1
+   },
+   "bound_pct_pooled": {
+    "web": 98.4,
+    "mobile": 97.8
+   },
+   "bound_pct_masters": {
+    "web": 99.7,
+    "mobile": 95.3
+   },
+   "text_styled_pct": {
+    "web": 100.0,
+    "mobile": 89.2
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 97.3
+   },
+   "roles": {
+    "text": {
+     "status": "agree",
+     "mobile": "color-text-muted",
+     "web": "color-text"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "color-bg"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg-subtle",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "mismatch",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-text-interactive",
+     "web": "color-border-primary"
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": null,
+     "web": "color-border-focusRing"
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 3,
+   "roles_na": [
+    "focus"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "color-bg"
+    },
+    {
+     "role": "status",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-text-interactive",
+     "web": "color-border-primary"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "text-lg/font-bold @18",
+    "mobile_titles": "(no style) @18 (11)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 17
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 4682,
+     "spacing_off_scale": 614,
+     "spacing_off_top": [
+      [
+       10,
+       614
+      ]
+     ],
+     "radius_unbound": 9,
+     "radius_off_scale": 1,
+     "radius_off_top": [
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    "mobile": {
+     "spacing_unbound": 974,
+     "spacing_off_scale": 105,
+     "spacing_off_top": [
+      [
+       16.0,
+       36
+      ],
+      [
+       10,
+       31
+      ],
+      [
+       9,
+       22
+      ]
+     ],
+     "radius_unbound": 40,
+     "radius_off_scale": 19,
+     "radius_off_top": [
+      [
+       3,
+       11
+      ],
+      [
+       24,
+       3
+      ],
+      [
+       6.0,
+       3
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.9,
+    "mobile_bound": 90.8,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -0.5,
+    "mobile_bound": -0.7
+   }
+  },
+  {
+   "web": "Responder",
+   "mobile": "Directory",
+   "pairing": "assumed",
+   "web_node": "19595:5721",
+   "mobile_node": "850:11256",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256",
+   "screens": {
+    "web": 30,
+    "mobile": 31
+   },
+   "bound_pct": {
+    "web": 97.5,
+    "mobile": 90.1
+   },
+   "bound_pct_pooled": {
+    "web": 97.8,
+    "mobile": 87.3
+   },
+   "bound_pct_masters": {
+    "web": 99.5,
+    "mobile": 98.7
+   },
+   "text_styled_pct": {
+    "web": 100.0,
+    "mobile": 91.2
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 95.7
+   },
+   "roles": {
+    "text": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-onColor"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "mismatch",
+     "mobile": "color-bg-elevated",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "mismatch",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": null,
+     "web": "color-border-focusRing"
+    },
+    "avatar": {
+     "status": "agree",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 2,
+   "roles_na": [
+    "focus"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "text",
+     "mobile": "color-text",
+     "web": "color-text-onColor"
+    },
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "surface",
+     "mobile": "color-bg-elevated",
+     "web": "color-bg"
+    },
+    {
+     "role": "status",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    }
+   ],
+   "text_style": {
+    "web_titles": "text-lg/font-bold @18",
+    "mobile_titles": "(no style) @32 (2)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 17
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 4793,
+     "spacing_off_scale": 816,
+     "spacing_off_top": [
+      [
+       10,
+       746
+      ],
+      [
+       22,
+       20
+      ],
+      [
+       95,
+       20
+      ]
+     ],
+     "radius_unbound": 130,
+     "radius_off_scale": 1,
+     "radius_off_top": [
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    "mobile": {
+     "spacing_unbound": 215,
+     "spacing_off_scale": 23,
+     "spacing_off_top": [
+      [
+       10,
+       9
+      ],
+      [
+       3,
+       8
+      ],
+      [
+       1,
+       2
+      ]
+     ],
+     "radius_unbound": 36,
+     "radius_off_scale": 11,
+     "radius_off_top": [
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.6,
+    "mobile_bound": 85.3,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -1.1,
+    "mobile_bound": 4.8
+   }
+  },
+  {
+   "web": "Chat",
+   "mobile": "Chat",
+   "pairing": "direct",
+   "web_node": "19605:7561",
+   "mobile_node": "735:51530",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530",
+   "screens": {
+    "web": 50,
+    "mobile": 503
+   },
+   "bound_pct": {
+    "web": 98.1,
+    "mobile": 86.1
+   },
+   "bound_pct_pooled": {
+    "web": 98.2,
+    "mobile": 96.3
+   },
+   "bound_pct_masters": {
+    "web": 98.4,
+    "mobile": 83.6
+   },
+   "text_styled_pct": {
+    "web": 98.7,
+    "mobile": 81.5
+   },
+   "text_styled_pct_pooled": {
+    "web": 97.0,
+    "mobile": 87.1
+   },
+   "roles": {
+    "text": {
+     "status": "agree",
+     "mobile": "color-text-muted",
+     "web": "color-text-muted"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "color-bg"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg-subtle",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "mismatch",
+     "mobile": "color-text-error",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "agree",
+     "mobile": "color-bg-primary",
+     "web": "color-bg-primary"
+    },
+    "focus": {
+     "status": "mismatch",
+     "mobile": "color-border-focusRing-sidebar",
+     "web": "color-border-focusRing"
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 4,
+   "roles_na": [],
+   "roles_mismatch": [
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "color-bg"
+    },
+    {
+     "role": "status",
+     "mobile": "color-text-error",
+     "web": "color-bg-warning-strong"
+    },
+    {
+     "role": "focus",
+     "mobile": "color-border-focusRing-sidebar",
+     "web": "color-border-focusRing"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "(none >=18px)",
+    "mobile_titles": "(no style) @18 (62), @34 (43), text-lg/font-semiBold @18 (6)",
+    "web_unstyled": 20,
+    "mobile_unstyled": 251
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 9672,
+     "spacing_off_scale": 1493,
+     "spacing_off_top": [
+      [
+       10,
+       1488
+      ],
+      [
+       38,
+       2
+      ],
+      [
+       73,
+       2
+      ]
+     ],
+     "radius_unbound": 57,
+     "radius_off_scale": 3,
+     "radius_off_top": [
+      [
+       20,
+       2
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    "mobile": {
+     "spacing_unbound": 4325,
+     "spacing_off_scale": 391,
+     "spacing_off_top": [
+      [
+       9,
+       120
+      ],
+      [
+       7.99,
+       76
+      ],
+      [
+       11.99,
+       45
+      ]
+     ],
+     "radius_unbound": 193,
+     "radius_off_scale": 94,
+     "radius_off_top": [
+      [
+       3,
+       60
+      ],
+      [
+       36.57,
+       12
+      ],
+      [
+       2,
+       7
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.6,
+    "mobile_bound": 75.1,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -0.5,
+    "mobile_bound": 11.0
+   }
+  },
+  {
+   "web": "Geofence",
+   "mobile": "Map",
+   "pairing": "no mobile module; compared with Map",
+   "web_node": "19615:11620",
+   "mobile_node": "808:6171",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171",
+   "screens": {
+    "web": 17,
+    "mobile": 143
+   },
+   "bound_pct": {
+    "web": 98.2,
+    "mobile": 80.5
+   },
+   "bound_pct_pooled": {
+    "web": 98.3,
+    "mobile": 95.1
+   },
+   "bound_pct_masters": {
+    "web": 99.0,
+    "mobile": 90.2
+   },
+   "text_styled_pct": {
+    "web": 100.0,
+    "mobile": 75.9
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 90.4
+   },
+   "roles": {
+    "text": {
+     "status": "agree",
+     "mobile": "color-text-muted",
+     "web": "color-text"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg-subtle",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "agree",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-border-interactive",
+     "web": "color-text-primary"
+    },
+    "focus": {
+     "status": "mismatch",
+     "mobile": "color-border-focusRing-sidebar",
+     "web": "color-border-focusRing"
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 4,
+   "roles_na": [],
+   "roles_mismatch": [
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-border-interactive",
+     "web": "color-text-primary"
+    },
+    {
+     "role": "focus",
+     "mobile": "color-border-focusRing-sidebar",
+     "web": "color-border-focusRing"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "text-lg/font-bold @18",
+    "mobile_titles": "(no style) @18 (26), @20 (24), ShadCN typography/h1 @48 (1)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 62
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 3125,
+     "spacing_off_scale": 659,
+     "spacing_off_top": [
+      [
+       10,
+       404
+      ],
+      [
+       14,
+       251
+      ],
+      [
+       38,
+       4
+      ]
+     ],
+     "radius_unbound": 134,
+     "radius_off_scale": 0,
+     "radius_off_top": []
+    },
+    "mobile": {
+     "spacing_unbound": 852,
+     "spacing_off_scale": 137,
+     "spacing_off_top": [
+      [
+       9,
+       52
+      ],
+      [
+       10,
+       28
+      ],
+      [
+       5,
+       24
+      ]
+     ],
+     "radius_unbound": 213,
+     "radius_off_scale": 76,
+     "radius_off_top": [
+      [
+       3,
+       26
+      ],
+      [
+       2,
+       23
+      ],
+      [
+       14,
+       11
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.2,
+    "mobile_bound": 89.7,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": 0.0,
+    "mobile_bound": -9.2
+   }
+  },
+  {
+   "web": "Camera",
+   "mobile": "Comms",
+   "pairing": "no mobile module; compared with Comms (PTV)",
+   "web_node": "19622:14597",
+   "mobile_node": "735:39373",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373",
+   "screens": {
+    "web": 9,
+    "mobile": 312
+   },
+   "bound_pct": {
+    "web": 98.2,
+    "mobile": 88.5
+   },
+   "bound_pct_pooled": {
+    "web": 98.0,
+    "mobile": 96.0
+   },
+   "bound_pct_masters": {
+    "web": 100.0,
+    "mobile": 86.8
+   },
+   "text_styled_pct": {
+    "web": 100.0,
+    "mobile": 88.5
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 93.0
+   },
+   "roles": {
+    "text": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-placeholder"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg-subtle",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "agree",
+     "mobile": "color-bg-warning-strong",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "n/a",
+     "mobile": "color-bg-primary",
+     "web": null
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": null,
+     "web": null
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 3,
+   "roles_na": [
+    "interactive",
+    "focus"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "text",
+     "mobile": "color-text",
+     "web": "color-text-placeholder"
+    },
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "(none >=18px)",
+    "mobile_titles": "(no style) @18 (25), @64 (2), @22 (1)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 114
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 1401,
+     "spacing_off_scale": 329,
+     "spacing_off_top": [
+      [
+       10,
+       329
+      ]
+     ],
+     "radius_unbound": 75,
+     "radius_off_scale": 0,
+     "radius_off_top": []
+    },
+    "mobile": {
+     "spacing_unbound": 3746,
+     "spacing_off_scale": 208,
+     "spacing_off_top": [
+      [
+       9,
+       57
+      ],
+      [
+       16.0,
+       40
+      ],
+      [
+       5,
+       32
+      ]
+     ],
+     "radius_unbound": 555,
+     "radius_off_scale": 99,
+     "radius_off_top": [
+      [
+       1,
+       66
+      ],
+      [
+       3,
+       25
+      ],
+      [
+       14,
+       4
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.6,
+    "mobile_bound": 83.1,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -0.4,
+    "mobile_bound": 5.4
+   }
+  },
+  {
+   "web": "Active",
+   "mobile": "Recent",
+   "pairing": "assumed",
+   "web_node": "19625:15120",
+   "mobile_node": "4925:124137",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19625-15120",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=4925-124137",
+   "screens": {
+    "web": 15,
+    "mobile": 29
+   },
+   "bound_pct": {
+    "web": 98.6,
+    "mobile": 87.5
+   },
+   "bound_pct_pooled": {
+    "web": 98.5,
+    "mobile": 89.0
+   },
+   "bound_pct_masters": {
+    "web": 99.7,
+    "mobile": 92.2
+   },
+   "text_styled_pct": {
+    "web": 99.9,
+    "mobile": 91.8
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 90.6
+   },
+   "roles": {
+    "text": {
+     "status": "agree",
+     "mobile": "color-text-muted",
+     "web": "color-text-muted"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "#262626 (unbound)",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "agree",
+     "mobile": "color-bg-warning-strong",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": "color-border-interactive-focus",
+     "web": null
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 4,
+   "roles_na": [
+    "focus"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "(none >=18px)",
+    "mobile_titles": "(no style) @64 (4), @22 (2), text-lg/font-semiBold @18 (1)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 27
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 3389,
+     "spacing_off_scale": 409,
+     "spacing_off_top": [
+      [
+       10,
+       409
+      ]
+     ],
+     "radius_unbound": 81,
+     "radius_off_scale": 0,
+     "radius_off_top": []
+    },
+    "mobile": {
+     "spacing_unbound": 356,
+     "spacing_off_scale": 19,
+     "spacing_off_top": [
+      [
+       5,
+       8
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       3,
+       4
+      ]
+     ],
+     "radius_unbound": 62,
+     "radius_off_scale": 14,
+     "radius_off_top": [
+      [
+       1,
+       11
+      ],
+      [
+       20,
+       3
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 98.9,
+    "mobile_bound": 91.2,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -0.3,
+    "mobile_bound": -3.7
+   }
+  },
+  {
+   "web": "Map",
+   "mobile": "Map",
+   "pairing": "direct",
+   "web_node": "19630:18977",
+   "mobile_node": "808:6171",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171",
+   "screens": {
+    "web": 17,
+    "mobile": 143
+   },
+   "bound_pct": {
+    "web": 98.2,
+    "mobile": 80.5
+   },
+   "bound_pct_pooled": {
+    "web": 98.1,
+    "mobile": 95.1
+   },
+   "bound_pct_masters": {
+    "web": 99.3,
+    "mobile": 90.2
+   },
+   "text_styled_pct": {
+    "web": 100.0,
+    "mobile": 75.9
+   },
+   "text_styled_pct_pooled": {
+    "web": 100.0,
+    "mobile": 90.4
+   },
+   "roles": {
+    "text": {
+     "status": "agree",
+     "mobile": "color-text-muted",
+     "web": "color-text-muted"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "agree",
+     "mobile": "color-bg-subtle",
+     "web": "color-bg"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-border",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "agree",
+     "mobile": "color-text-success",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-border-interactive",
+     "web": "color-border-primary"
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": "color-border-focusRing-sidebar",
+     "web": null
+    },
+    "avatar": {
+     "status": "mismatch",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 4,
+   "roles_na": [
+    "focus"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-border-interactive",
+     "web": "color-border-primary"
+    },
+    {
+     "role": "avatar",
+     "mobile": "color-text",
+     "web": "color-text-muted"
+    }
+   ],
+   "text_style": {
+    "web_titles": "(none >=18px)",
+    "mobile_titles": "(no style) @18 (26), @20 (24), ShadCN typography/h1 @48 (1)",
+    "web_unstyled": 0,
+    "mobile_unstyled": 62
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 3034,
+     "spacing_off_scale": 440,
+     "spacing_off_top": [
+      [
+       10,
+       433
+      ],
+      [
+       22,
+       5
+      ],
+      [
+       3,
+       2
+      ]
+     ],
+     "radius_unbound": 34,
+     "radius_off_scale": 4,
+     "radius_off_top": [
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    "mobile": {
+     "spacing_unbound": 852,
+     "spacing_off_scale": 137,
+     "spacing_off_top": [
+      [
+       9,
+       52
+      ],
+      [
+       10,
+       28
+      ],
+      [
+       5,
+       24
+      ]
+     ],
+     "radius_unbound": 213,
+     "radius_off_scale": 76,
+     "radius_off_top": [
+      [
+       3,
+       26
+      ],
+      [
+       2,
+       23
+      ],
+      [
+       14,
+       11
+      ]
+     ]
+    }
+   },
+   "prev": {
+    "web_bound": 99.0,
+    "mobile_bound": 89.7,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -0.8,
+    "mobile_bound": -9.2
+   }
+  },
+  {
+   "web": "Login",
+   "mobile": "Login",
+   "pairing": "direct",
+   "web_node": "19632:21327",
+   "mobile_node": "21:3",
+   "web_link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327",
+   "mobile_link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3",
+   "screens": {
+    "web": 5,
+    "mobile": 17
+   },
+   "bound_pct": {
+    "web": 57.9,
+    "mobile": 99.6
+   },
+   "bound_pct_pooled": {
+    "web": 78.2,
+    "mobile": 99.8
+   },
+   "bound_pct_masters": {
+    "web": 99.4,
+    "mobile": 98.6
+   },
+   "text_styled_pct": {
+    "web": 92.8,
+    "mobile": 100.0
+   },
+   "text_styled_pct_pooled": {
+    "web": 91.7,
+    "mobile": 100.0
+   },
+   "roles": {
+    "text": {
+     "status": "mismatch",
+     "mobile": "color-text-placeholder",
+     "web": "#09090b (unbound)"
+    },
+    "icon": {
+     "status": "mismatch",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    "surface": {
+     "status": "mismatch",
+     "mobile": "color-bg-elevated",
+     "web": "#ffffff (unbound)"
+    },
+    "border": {
+     "status": "agree",
+     "mobile": "color-icon-muted",
+     "web": "color-border"
+    },
+    "status": {
+     "status": "mismatch",
+     "mobile": "color-border-error",
+     "web": "color-bg-warning-strong"
+    },
+    "interactive": {
+     "status": "mismatch",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    },
+    "focus": {
+     "status": "n/a",
+     "mobile": null,
+     "web": null
+    },
+    "avatar": {
+     "status": "n/a",
+     "mobile": null,
+     "web": "color-text-muted"
+    }
+   },
+   "roles_agree": 1,
+   "roles_na": [
+    "focus",
+    "avatar"
+   ],
+   "roles_mismatch": [
+    {
+     "role": "text",
+     "mobile": "color-text-placeholder",
+     "web": "#09090b (unbound)"
+    },
+    {
+     "role": "icon",
+     "mobile": "color-icon",
+     "web": "#f97316 (unbound)"
+    },
+    {
+     "role": "surface",
+     "mobile": "color-bg-elevated",
+     "web": "#ffffff (unbound)"
+    },
+    {
+     "role": "status",
+     "mobile": "color-border-error",
+     "web": "color-bg-warning-strong"
+    },
+    {
+     "role": "interactive",
+     "mobile": "color-bg-primary",
+     "web": "color-border-primary"
+    }
+   ],
+   "text_style": {
+    "web_titles": "ShadCN typography/h3 @24 (3), unstyled @36 (3)",
+    "mobile_titles": "(none >=18px); headings text-base/font-bold (12)",
+    "web_unstyled": 3,
+    "mobile_unstyled": 0
+   },
+   "spacing_radius": {
+    "web": {
+     "spacing_unbound": 262,
+     "spacing_off_scale": 33,
+     "spacing_off_top": [
+      [
+       10,
+       33
+      ]
+     ],
+     "radius_unbound": 0,
+     "radius_off_scale": 0,
+     "radius_off_top": []
+    },
+    "mobile": {
+     "spacing_unbound": 138,
+     "spacing_off_scale": 70,
+     "spacing_off_top": [
+      [
+       20,
+       33
+      ],
+      [
+       28,
+       33
+      ],
+      [
+       110,
+       2
+      ]
+     ],
+     "radius_unbound": 0,
+     "radius_off_scale": 0,
+     "radius_off_top": []
+    }
+   },
+   "prev": {
+    "web_bound": 89.0,
+    "mobile_bound": 97.8,
+    "note": "2026-10-22 content-profile method; not comparable"
+   },
+   "delta": {
+    "web_bound": -31.1,
+    "mobile_bound": 1.8
+   }
+  }
+ ],
+ "findings": [
+  {
+   "id": "PAR-001",
+   "severity": "P1",
+   "route": "CHERN-DECISION",
+   "title": "Severity and status colours use different tokens and values",
+   "evidence": "Mobile still uses local `priority level/*` (Incident 16 high + 21 critical; Comms 52 critical; Chat 37 critical; Map 29 critical) next to AOH `color-text-success/-error`. Web binds AOH `color-bg-warning-strong` (dominant status token in all 8 modules, 16 to 784 uses), `color-icon-warning`, `color-icon-info`, and never `priority level/*`. Status role differs in 4 of 8 pairs (Incident, Responder, Chat, Login); the other 4 share `color-bg-warning-strong` but mobile also carries `priority level/*` there.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-002",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Web uses a hardcoded orange #f97316 with no AOH token",
+   "evidence": "Unbound #f97316 still present in all 8 web modules (Incident 26, Responder 28, Chat 49, Geofence 17, Camera 9, Active 15, Map 17, Login 1), on borders and pin icons.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Geofence",
+    "node": "19615:11620",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19615-11620"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-003",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Active, selected and link states use different token families",
+   "evidence": "Interactive role: mobile dominant tokens are `color-bg-primary` / `color-text-interactive` / `color-border-interactive`; web dominant tokens are `color-border-primary` / `color-text-primary` / `color-bg-primary`. Mismatch in 6 of the 7 pairs with data (Chat agrees; Camera has no web interactive paints). Web does use `-interactive` in a few masters (Chat icon 17, Responder border 6).",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-004",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Focus ring uses different tokens",
+   "evidence": "Web masters bind `color-border-focusRing` (Chat 3, Incident 2, Responder 1, Geofence 1). Mobile binds `color-border-focusRing-sidebar` (Chat, Map, Recent) and `color-border-interactive-focus` (Recent screens). Compared pairs with focus data on both sides: Chat.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-005",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Card corner radius differs (8px vs 12px)",
+   "evidence": "Web binds `radius-card` (12) in only a handful of places (Login 3, Chat 3, Incident 1, Geofence 1, Active 1). Its cards mostly use an unbound 8 (Responder 86, Geofence 132, Camera 72, Active 75). Mobile cards use `radius-dialog` (8) (Chat 120, Map 59, Incident 28). The 8 vs 12 split is weaker than last week suggested: both sides mostly use 8.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Comms",
+    "node": "735:39373",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-39373"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-006",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile binds to stale collections .Semantic and Dimensions",
+   "evidence": "Stale-looking variable names still bound on mobile: `Spacing/space-2` (Incident 8+, Comms 8, Map 30, Recent 8, Directory 8), `Spacing/0․5` (6 of 7 pages). Identified by variable name only; the collection name was not read this run.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-007",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web binds to the same stale collections",
+   "evidence": "Web still binds `Spacing/space-2` (Incident 88, Geofence 22), `space-sm`, `0․5`, `1․5`. Also `Spacing/spacing-xs` resolves to 6 on most nodes but to 8 on others (Responder 10, Chat 4, Map 10 uses): one name, two values. Name-based; collections not read.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Incident",
+    "node": "735:47082",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-47082"
+   },
+   "web": {
+    "frame": "Incident",
+    "node": "19553:372547",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19553-372547"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-008",
+   "severity": "P2",
+   "route": "CHERN-DECISION",
+   "title": "Avatar is a different component with different tokens",
+   "evidence": "Mobile binds local `comms/avatar-surface` (Chat 26, Map 36, Comms 48, Recent 22, Incident 11, Directory 11). Web avatar paints bind `color-text-muted` / `color-border-onColor` / `color-bg-elevated`. Avatar role differs in 6 of the 7 pairs with data (Responder agrees; Login has no mobile avatar).",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Directory",
+    "node": "850:11256",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=850-11256"
+   },
+   "web": {
+    "frame": "Responder",
+    "node": "19595:5721",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-009",
+   "severity": "P2",
+   "route": "FIX-WEB",
+   "title": "Web Login hardcodes text, surface and border colours",
+   "evidence": "Web Login: unbound #09090b (6), #71717a (6), #eeeeee (3), #ffffff (9), #e4e4e7 (6). Screen-average bound is 49.6% vs 99.7% on mobile Login. Pooled it is 78.2% (115/147).",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-010",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Icons on dark surfaces use different tokens",
+   "evidence": "Web masters use both `color-icon-invers` (Incident 2, Active 2, Login 2) and `color-icon-onColor` (Incident 6, Geofence 6, Map 2). Mobile uses `color-icon-onColor` (Map 27+15, Comms 31). Not re-measured by role at screen level this run.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Map",
+    "node": "808:6171",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=808-6171"
+   },
+   "web": {
+    "frame": "Map",
+    "node": "19630:18977",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19630-18977"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-011",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Input borders use a different token name (same value)",
+   "evidence": "Not re-verified this run: `color-border-input` did not appear in the top tokens on either side, so the earlier finding is carried forward unchanged. Mobile Login borders mostly bind `color-icon-muted` (24) and `color-border` (15).",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-012",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Off-scale spacing: gap 10 (and 14) unbound on web; mobile has its own off-scale values",
+   "evidence": "Web unbound `10` in every module (Chat 1206, Responder 695, Incident 601) and `14` in Geofence (251). Mobile unbound `10` is small (Incident 10, Comms 20, Map 12) and its Chat top values are fractional (see PAR-017). Last week's mobile Chat 469 for gap 10 was not reproduced: mobile Chat has 29 nodes at 10.448 and none at exactly 10 in the top 12.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-013",
+   "severity": "P3",
+   "route": "FIX-WEB",
+   "title": "Web Chat has text with no style",
+   "evidence": "Web Chat: 20 unstyled text nodes in screens plus 117 in masters (889 of 1006 styled). Font size was not captured this run, so the earlier 'Geist Regular 10' detail is unverified.",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-014",
+   "severity": "P3",
+   "route": "CHERN-DECISION",
+   "title": "Title text styles differ",
+   "evidence": "Web titles: `text-lg/font-bold` @18 (Incident 13, Geofence 4, Responder 1); Login `ShadCN typography/h3` @24 plus 3 unstyled @36. Mobile has no title style at 18px+: unstyled @18 (Incident 11, Chat 62, Map 26, Comms 25), unstyled @34 (Chat 43), `text-lg/font-semiBold` @18 (Chat 6, Recent 1), one `ShadCN typography/h1` @48 (Map). Mobile Login has no text at 18px+; its headings are `text-base/font-bold` (12).",
+   "status": "persisting",
+   "mobile": {
+    "frame": "Login",
+    "node": "21:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=21-3"
+   },
+   "web": {
+    "frame": "Login",
+    "node": "19632:21327",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19632-21327"
+   },
+   "first_seen": "2026-10-22",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-015",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile Directory camera and drone sheets are hardcoded",
+   "evidence": "Mobile Directory bound 89.8% (screen average) but frames `6.3b Live Feed Fullscreen` (0%), `6.2a Camera Detail Sheet` (0%) and `6.3a Drone Detail Sheet` (26.5%) are almost entirely unbound: #ffffff (142), #09090b (54), #1e293b (16), #10b981 (4), #71717a, #ef4444. #10b981 and #ef4444 look like status colours; confirm, because that would make part of this P1.",
+   "status": "new",
+   "mobile": {
+    "frame": "6.2a Camera Detail Sheet",
+    "node": "904:4",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=904-4"
+   },
+   "web": {
+    "frame": "Responder",
+    "node": "19595:5721",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19595-5721"
+   },
+   "first_seen": "2026-10-23",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-016",
+   "severity": "P2",
+   "route": "FIX-MOBILE",
+   "title": "Mobile Comms and Recent use hardcoded greys on dark frames",
+   "evidence": "Unbound #09090b surfaces (Comms 117, Recent 22), #262626 borders (Recent 72, Comms 26), #5d6471 / #5e7c85 fills (84 each in masters), #000000. Lowest frames: `Call Log — states` 40.6%, `Comms Module/ Dispatcher 1 recent` 51.7%, `Notifications — Lock screen, singles` 76.2%. Some of this may be OS lock-screen mockup, which is not token-driven; confirm before fixing.",
+   "status": "new",
+   "mobile": {
+    "frame": "Call Log — states",
+    "node": "2349:3",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=2349-3"
+   },
+   "web": {
+    "frame": "Camera",
+    "node": "19622:14597",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19622-14597"
+   },
+   "first_seen": "2026-10-23",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-017",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Mobile spacing and radius have fractional and extreme unbound values",
+   "evidence": "Mobile Chat unbound spacing includes 7.99 (58), 11.99 (45), 15.98 (30), 10.45 (29), 26.12 (27). Fractional radii 36.57 and 12.02 appear; a radius of 12498.75 is on 30 Map nodes and 6 Chat nodes (a pill on a large shape). Looks like resized or scaled frames. Web has none of this.",
+   "status": "new",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-23",
+   "weeks_open": 1
+  },
+  {
+   "id": "PAR-018",
+   "severity": "P3",
+   "route": "FIX-MOBILE",
+   "title": "Mobile text with no style",
+   "evidence": "Unstyled text nodes on mobile (screens + masters): Chat 251 + 46, Comms 114 + 26, Map 62 + 24, Recent 27 + 9, Incident 17 + 22, Directory 17 + 2. Text style coverage is 75.8% (Map) to 91.8% (Recent) by screen average, vs 98.7%+ on web (Login 92.8%).",
+   "status": "new",
+   "mobile": {
+    "frame": "Chat",
+    "node": "735:51530",
+    "link": "https://www.figma.com/design/e6RBhSWdLlLinhceozYLYe/AGIL-Mobile-App?node-id=735-51530"
+   },
+   "web": {
+    "frame": "Chat",
+    "node": "19605:7561",
+    "link": "https://www.figma.com/design/VYNooSMqyhqJPom58kg8zV/Field-Manager-v2.2?node-id=19605-7561"
+   },
+   "first_seen": "2026-10-23",
+   "weeks_open": 1
+  }
+ ],
+ "unmapped": {
+  "mobile_pages": [
+   "Cover",
+   "Documentation",
+   "Mobile App Audit",
+   "Slice 6 + Slice 4 Leftover (KIV)",
+   "Design Enhancment",
+   "Cross Module",
+   "Settings",
+   "Prototype - 6/7/26",
+   "Components",
+   "Archives",
+   "Slice 4 - Mop Up (Archive)",
+   "Slice 5 + 4 left over (Archive)"
+  ],
+  "web_pages": [
+   "Cover",
+   "Field Manager",
+   "→ Workspace 1.0 (12 Mar 2026)",
+   "→ Workspace 1.1",
+   "→ Workspace 1.2",
+   "-> Change",
+   "-> Heuristic Evaluation",
+   "Desktop App Audit",
+   "→ DEMO STORYBOARD",
+   "→ Mobile - WIP",
+   "Incident Panel — Demo (Claude)"
+  ],
+  "web_sections_on_current_website_wip": [
+   "Master Component",
+   "Mobbin check",
+   "Chat/ Shared location (web)/ 2026-10-19",
+   "Login Fixed",
+   "Master Component/ New",
+   "Queue (frame)",
+   "Data table (frame)",
+   "Incident Panel Fixed",
+   "Incident/ ListRow (instance)"
+  ],
+  "note": "Mobile mapped pages are scanned whole, so every section inside them is in scope. Sections inside the mapped web panels are in scope."
+ },
+ "skipped": [],
+ "errors": []
+}
